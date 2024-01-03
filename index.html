@@ -1,13 +1,163 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: {
+              DEFAULT: "1rem",
+            },
+          },
+
+          extend: {
+            fontSize: {
+              // xs: "16px",textbase
+              // sm: "18px",text-lg
+              // md: "20px",text-xl
+              // lg: "24px",text-2xl
+              xxl: "32px",
+              four_xl: "40px",
+              five_xl: "56px",
+              six_xl: "64px",
+            },
+            colors: {
+              dark: "#111111",
+              gray: "#585858",
+              blue: "#01639E",
+              red: "#CB372B",
+              lightblue: "#C7DAE6",
+              primary_black: "#0F021D",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="overflow-hidden">
+      <div class="max-w-[1140px] mx-auto">
+        <div class="py-3 md:py-[18px] mx-4 items-center flex justify-between">
+          <div class="flex justify-between items-center w-full relative z-20">
+            <img
+              class="cursor-pointer max-w-[150px] lg:max-w-[220px]"
+              src="./assets/css/"
+              alt="logo"
+            />
+            <button
+              onclick="show()"
+              class="lg:hidden absolute end-0 text-black"
+            >
+              <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_3942_2072)">
+                  <path
+                    d="M3 4.5H21V6.5H3V4.5ZM3 11.5H21V13.5H3V11.5ZM3 18.5H21V20.5H3V18.5Z"
+                    fill="black"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+          <ul
+            class="lg:flex font-semibold flex gap-5 lg:gap-0 lg:flex-row bg-white lg:bg-transparent min-h-screen lg:min-h-fit justify-center items-center w-full lg:relative z-20 fixed left-[-100%] lg:start-0 top-0 flex-col h-full ps-0 transition-all duration-300 ease-linear"
+            id="navMenu"
+          >
+            <li>
+              <a
+                onclick="hide()"
+                href="#PARTICIPANTS"
+                class="ff_plus_jakarta relative text-base font-semibold leading-[150%] text-black hover:text-[#B80FB6] after:absolute after:w-0 duration-300 after:duration-300 after:h-0.5 after:bg-[#B80FB6] after:bottom-0 after:left-0 hover:after:w-full"
+                >PARTICIPANTS</a
+              >
+            </li>
+
+            <li class="lg:ps-9">
+              <a
+                onclick="hide()"
+                href="#AGENDA"
+                class="ff_plus_jakarta relative text-base font-semibold leading-[150%] text-black hover:text-[#B80FB6] after:absolute after:w-0 duration-300 after:duration-300 after:h-0.5 after:bg-[#B80FB6] after:bottom-0 after:left-0 hover:after:w-full"
+                >AGENDA</a
+              >
+            </li>
+            <li class="lg:ps-9">
+              <a
+                onclick="hide()"
+                href="#SPEAKERS"
+                class="ff_plus_jakarta relative text-base font-semibold leading-[150%] text-black hover:text-[#B80FB6] after:absolute after:w-0 duration-300 after:duration-300 after:h-0.5 after:bg-[#B80FB6] after:bottom-0 after:left-0 hover:after:w-full"
+                >SPEAKERS</a
+              >
+            </li>
+            <li class="lg:ps-9">
+              <a
+                onclick="hide()"
+                href="#FAQ"
+                class="ff_plus_jakarta relative text-base font-semibold leading-[150%] text-black hover:text-[#B80FB6] after:absolute after:w-0 duration-300 after:duration-300 after:h-0.5 after:bg-[#B80FB6] after:bottom-0 after:left-0 hover:after:w-full"
+                >FAQ</a
+              >
+            </li>
+            <li class="lg:ps-9">
+              <a
+                onclick="hide()"
+                href="#LOGIN"
+                class="ff_plus_jakarta relative text-base font-semibold leading-[150%] text-black hover:text-[#B80FB6] after:absolute after:w-0 duration-300 after:duration-300 after:h-0.5 after:bg-[#B80FB6] after:bottom-0 after:left-0 hover:after:w-full"
+                >LOGIN</a
+              >
+            </li>
+
+            <button
+              class="px-8 py-[9px] border-[1px] text-dark font-extrabold text-base ff_plus_jakarta border-solid border-[black] xl:ms-[66px] lg:ms-4 hover:text-white hover:bg-gradient-to-r duration-300 from-[#553581] from-66.54% to-[#B80FB6] hover:border-transparent"
+            >
+              EXHIBIT
+            </button>
+            <button
+              onclick="hide()"
+              class="absolute lg:hidden top-[15px] right-[20px]"
+            >
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M25.9846 11.6665L20.0013 17.6498L14.018 11.6665L11.668 14.0165L17.6513 19.9998L11.668 25.9832L14.018 28.3332L20.0013 22.3498L25.9846 28.3332L28.3346 25.9832L22.3513 19.9998L28.3346 14.0165L25.9846 11.6665Z"
+                  fill="black"
+                />
+              </svg>
+            </button>
+          </ul>
+          <div class="text-end hidden lg:block xl:ps-5 ps-4">
+            <button
+              class="ff_plus_jakarta py-[10px] px-8 cursor-pointer whitespace-nowrap text-white font-extrabold leading-[150%] bg-gradient-main"
+            >
+              GET TICKETS
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script>
+      // JavaScript to handle the responsive navigation menu
+      function show() {
+        document.getElementById("navMenu").classList.add("!start-0");
+        document.body.classList.add("overflow-hidden");
+      }
+
+      function hide() {
+        document.getElementById("navMenu").classList.remove("!start-0");
+        document.body.classList.remove("overflow-hidden");
+      }
+    </script>
+  </body>
 </html>
