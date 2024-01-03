@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Sprt</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -42,11 +44,15 @@
     <header
       class="overflow-hidden bg-[url('/assets/images/webp/header_bg.webp')] bg-no-repeat bg-center bg-cover"
     >
-      <nav class="max-w-[1240px] mx-auto">
-        <div class="py-3 md:py-[18px] mx-4 items-center flex justify-between">
-          <div class="flex justify-between items-center w-full relative z-20">
+      <nav
+        class="max-w-[1240px] mx-auto rounded-[129px] mt-[20px] px-[20px] lg:px-[50px] bg_nav"
+      >
+        <div class="py-3 md:py-[10px]items-center flex justify-between">
+          <div
+            class="flex justify-between items-center w-full lg:w-auto relative z-20"
+          >
             <img
-              class="cursor-pointer max-w-[150px] lg:max-w-[220px]"
+              class="cursor-pointer"
               src="./assets/images/svg/navlogo.svg"
               alt="logo"
             />
@@ -54,72 +60,67 @@
               onclick="show()"
               class="lg:hidden absolute end-0 text-black"
             >
-              <svg
-                width="24"
-                height="25"
-                viewBox="0 0 24 25"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0_3942_2072)">
-                  <path
-                    d="M3 4.5H21V6.5H3V4.5ZM3 11.5H21V13.5H3V11.5ZM3 18.5H21V20.5H3V18.5Z"
-                    fill="black"
-                  />
-                </g>
-              </svg>
+              <img src="./assets/images/svg/nav_open.svg" alt="nav_open" />
             </button>
           </div>
           <ul
-            class="lg:flex font-semibold flex gap-5 lg:gap-0 lg:flex-row bg-white lg:bg-transparent min-h-screen lg:min-h-fit justify-center items-center w-full lg:relative z-20 fixed left-[-100%] lg:start-0 top-0 flex-col h-full ps-0 transition-all duration-300 ease-linear"
+            class="lg:flex font-semibold flex gap-5 lg:gap-0 lg:flex-row bg-black lg:bg-transparent min-h-screen lg:min-h-fit justify-center lg:justify-end items-center w-full lg:relative z-20 fixed left-[-100%] lg:start-0 top-0 flex-col h-full ps-0 transition-all duration-300 ease-linear"
             id="navMenu"
           >
             <li>
               <a
                 onclick="hide()"
                 href="#Home"
-                class="ff_plus_jakarta relative text-base font-semibold leading-[150%] text-black hover:text-[#B80FB6] after:absolute after:w-0 duration-300 after:duration-300 after:h-0.5 after:bg-[#B80FB6] after:bottom-0 after:left-0 hover:after:w-full"
+                class="ff_k2d text-[rgba(192,188,193)] leading-[150%] font-normal text-[16px] duration-300 hover:text-[#00E0F7]"
                 >Home</a
               >
             </li>
 
-            <li class="lg:ps-9">
+            <li class="lg:ps-[32px]">
               <a
                 onclick="hide()"
                 href="#AGENDA"
-                class="ff_plus_jakarta relative text-base font-semibold leading-[150%] text-black hover:text-[#B80FB6] after:absolute after:w-0 duration-300 after:duration-300 after:h-0.5 after:bg-[#B80FB6] after:bottom-0 after:left-0 hover:after:w-full"
+                class="ff_k2d text-[rgba(192,188,193)] leading-[150%] font-normal text-[16px] duration-300 hover:text-[#00E0F7]"
                 >About Us</a
               >
             </li>
-            <li class="lg:ps-9">
+            <li class="lg:ps-[32px]">
               <a
                 onclick="hide()"
                 href="#SPEAKERS"
-                class="ff_plus_jakarta relative text-base font-semibold leading-[150%] text-black hover:text-[#B80FB6] after:absolute after:w-0 duration-300 after:duration-300 after:h-0.5 after:bg-[#B80FB6] after:bottom-0 after:left-0 hover:after:w-full"
+                class="ff_k2d text-[rgba(192,188,193)] leading-[150%] font-normal text-[16px] duration-300 hover:text-[#00E0F7]"
                 >Our Mission</a
               >
             </li>
-            <li class="lg:ps-9">
+            <li class="lg:ps-[32px]">
               <a
                 onclick="hide()"
                 href="#FAQ"
-                class="ff_plus_jakarta relative text-base font-semibold leading-[150%] text-black hover:text-[#B80FB6] after:absolute after:w-0 duration-300 after:duration-300 after:h-0.5 after:bg-[#B80FB6] after:bottom-0 after:left-0 hover:after:w-full"
+                class="ff_k2d text-[rgba(192,188,193)] leading-[150%] font-normal text-[16px] duration-300 hover:text-[#00E0F7]"
                 >Art Showcase</a
               >
             </li>
-            <li class="lg:ps-9">
+            <li class="lg:ps-[32px]">
               <a
                 onclick="hide()"
                 href="#LOGIN"
-                class="ff_plus_jakarta relative text-base font-semibold leading-[150%] text-black hover:text-[#B80FB6] after:absolute after:w-0 duration-300 after:duration-300 after:h-0.5 after:bg-[#B80FB6] after:bottom-0 after:left-0 hover:after:w-full"
+                class="ff_k2d text-[rgba(192,188,193)] leading-[150%] font-normal text-[16px] duration-300 hover:text-[#00E0F7]"
                 >Community</a
+              >
+            </li>
+            <li class="lg:ps-[32px]">
+              <a
+                onclick="hide()"
+                href="#LOGIN"
+                class="ff_k2d text-[rgba(192,188,193)] leading-[150%] font-normal text-[16px] duration-300 hover:text-[#00E0F7]"
+                >Get Involved</a
               >
             </li>
 
             <button
-              class="px-8 py-[9px] border-[1px] text-dark font-extrabold text-base ff_plus_jakarta border-solid border-[black] xl:ms-[66px] lg:ms-4 hover:text-white hover:bg-gradient-to-r duration-300 from-[#553581] from-66.54% to-[#B80FB6] hover:border-transparent"
+              class="px-[20px] py-3 text-white font-semibold text-base ff_k2d rounded-[129px] xl:ms-[50px] lg:ms-4 hover:text-white duration-300 bg_nav_btn"
             >
-            Contact Us
+              Contact Us
             </button>
             <button
               onclick="hide()"
@@ -134,13 +135,53 @@
               >
                 <path
                   d="M25.9846 11.6665L20.0013 17.6498L14.018 11.6665L11.668 14.0165L17.6513 19.9998L11.668 25.9832L14.018 28.3332L20.0013 22.3498L25.9846 28.3332L28.3346 25.9832L22.3513 19.9998L28.3346 14.0165L25.9846 11.6665Z"
-                  fill="black"
+                  fill="white"
                 />
               </svg>
             </button>
           </ul>
         </div>
       </nav>
+      <main class="flex flex-col items-center lg:pt-[97px] relative">
+        <img
+          class="h-[409.593px] md:w-[194px] xl:w-[274px] xl:h-[631px] absolute xl:top-[4%] top-[45%] right-[-2%]  xl:right-[5%] z-10"
+          src="./assets/images/webp/headerright.webp"
+          alt="headerright"
+        />
+        <img
+          class="xl:min-h-[539px]id xl:min-w-[478px] absolute top-[20%] start-[0%] header_left"
+          src="./assets/images/webp/headerleft.webp"
+          alt="headerleft"
+        />
+        <div
+          class="max-w-[1140px] mx-auto flex flex-col items-center ps-[22px] pe-[20px]"
+        >
+          <p
+            class="text-center leading-[120%] text-[#01DFF7] border-1 border border-[rgba(56,52,62)] font-semibold ff_k2d px-[20px] rounded-[81px] py-[12px] bg_nav mx-auto text-[16px] sm:text-[20px] mt-[48px] lg:mt-0 display:block"
+          >
+            Welcome to SPRT
+          </p>
+          <h1
+            class="ff_oswald font-bold text-white sm:text-[50px] text-[32px] md:text-[60px] lg:text-[75px] xl:text-[80px] leading-[120%] max-w-[258px] sm:max-w-[611px] text-center mt-[12px] sm:mt-[16px]"
+          >
+            Solanas Spirited <span class="text-[#01DFF7]"> AI Meme </span> Hub
+          </h1>
+          <p
+            class="sm:max-w-[629px] max-w-[335px] text-[rgba(190,193,192)] text-center ff_k2d mt-[8px] text-[16px]"
+          >
+            We are a vibrant AI hub within the Solana ecosystem, dedicated to
+            crafting meme-based art that transcends boundaries and sparks the
+            imagination. We represent the true Spirit of Solana - uniting in our
+            pursuit to be the best!
+          </p>
+          <button
+            class="px-[20px] py-3 text-white font-semibold text-base ff_k2d rounded-[129px] xl:ms-[50px] mt-[24px] sm:mt-[32px] mb-[91px] lg:ms-4 hover:text-white duration-300 bg_nav_btn"
+          >
+            Join the Spirit
+          </button>
+        </div>
+        <span class="w-full blacklayer h-[106px] mt-[200px] sm:mt-[91px] relative"></span>
+      </main>
     </header>
     <script>
       // JavaScript to handle the responsive navigation menu
