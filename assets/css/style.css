@@ -30,7 +30,7 @@
 .blacklayer2 {
   background: linear-gradient(180deg, #000 37.24%, rgba(0, 0, 0, 0.01) 88.23%);
 }
-#ta @media (min-width: 1024px) {
+@media (min-width: 1024px) {
   .bg_nav {
     background: rgba(255, 255, 255, 0.06);
     backdrop-filter: blur(10px);
