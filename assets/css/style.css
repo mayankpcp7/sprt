@@ -7,15 +7,12 @@
 .ff_k2d {
   font-family: "K2D";
 }
+
 .bg_nav_btn {
   box-shadow: 0px 0px 6px 0px rgba(118, 35, 198, 0.8);
-  background: radial-gradient(
-      120.14% 119.17% at 93.56% 8%,
-      #00e0f7 0%,
-      #8b00bd 72.13%
-    ),
-    #fff;
+  background: radial-gradient(120.14% 119.17% at 93.56% 8%, #00e0f7 0%, #8b00bd 72.13%), #fff;
 }
+<<<<<<< HEAD
 .bg_nav_btn:hover {
   background: linear-gradient(
       93.56% 8% 120.14% at 119.17%,
@@ -31,18 +28,50 @@
   background: linear-gradient(180deg, #000 37.24%, rgba(0, 0, 0, 0.01) 88.23%);
 }
  @media (min-width: 1024px) {
+=======
+
+.blacklayer {
+  background: linear-gradient(360deg, #000 37.24%, rgba(0, 0, 0, 0.01) 88.23%);
+}
+
+@media (min-width: 1024px) {
+>>>>>>> 835be55defcd9223eeab68058f8005a389867795
   .bg_nav {
     background: rgba(255, 255, 255, 0.06);
     backdrop-filter: blur(10px);
   }
 }
+
+@media (min-width:1333px) {
+  .prev_arrow {
+    top: 49%;
+    left: 4%;
+  }
+
+  .next_arrow {
+    top: 49%;
+    right: 4%;
+  }
+}
+
 @media (max-width: 1333px) {
   .header_left {
     min-width: 200px !important;
     max-width: 300px;
     top: 49% !important;
   }
+
+  .prev_arrow {
+    bottom: 10%;
+    left: 5%;
+  }
+
+  .next_arrow {
+    bottom: 10%;
+    right: 5%;
+  }
 }
+
 @media (max-width: 608px) {
   .header_left {
     min-height: 349.742px !important;
@@ -50,6 +79,16 @@
 
     top: 60% !important;
     left: -10% !important;
+  }
+
+  .prev_arrow {
+    bottom: 17%;
+    left: 35%;
+  }
+
+  .next_arrow {
+    bottom: 17%;
+    right: 35%;
   }
 }
 .tab_bg {
