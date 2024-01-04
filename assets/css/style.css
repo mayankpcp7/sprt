@@ -16,10 +16,21 @@
     ),
     #fff;
 }
+.bg_nav_btn:hover {
+  background: linear-gradient(
+      93.56% 8% 120.14% at 119.17%,
+
+      #8b00bd 72.13% #00e0f7 0%
+    ),
+    #fff;
+}
 .blacklayer {
   background: linear-gradient(360deg, #000 37.24%, rgba(0, 0, 0, 0.01) 88.23%);
 }
-@media (min-width: 1024px) {
+.blacklayer2 {
+  background: linear-gradient(180deg, #000 37.24%, rgba(0, 0, 0, 0.01) 88.23%);
+}
+ @media (min-width: 1024px) {
   .bg_nav {
     background: rgba(255, 255, 255, 0.06);
     backdrop-filter: blur(10px);
@@ -36,13 +47,41 @@
   .header_left {
     min-height: 349.742px !important;
     max-width: 274.461px;
-   
+
     top: 60% !important;
     left: -10% !important;
   }
 }
+.tab_bg {
+  background: rgba(255, 255, 255, 0.02);
 
+  backdrop-filter: blur(20px);
+}
 .backdrop_blur_20px {
   backdrop-filter: blur(20px);
   background: rgba(255, 255, 255, 0.02);
+}
+.tabbtn::before {
+  fill: radial-gradient(
+    120.14% 119.17% at 93.56% 58%,
+    rgba(0, 224, 247, 0.8) 0%,
+    #8b00bd 88.12%
+  );
+  stroke-width: 3px;
+  stroke: rgba(0, 224, 247, 0.8);
+}
+.tabbtn:focus::before {
+  opacity: 100%;
+}
+.tabbtn::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: radial-gradient(
+    120.14% 119.17% at 93.56% 58%,
+    rgba(0, 224, 247, 0.8) 0%,
+    #8b00bd 88.12%
+  );
+  stroke-width: 3px;
+  stroke: rgba(0, 224, 247, 0.8);
 }
