@@ -4,7 +4,13 @@
     <title>Sprt</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/webp/LOGO_SPRT.webp">
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
@@ -19,6 +25,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
@@ -33,10 +40,6 @@
 
           extend: {
             fontSize: {
-              // xs: "16px",textbase
-              // sm: "18px",text-lg
-              // md: "20px",text-xl
-              // lg: "24px",text-2xl
               xxl: "32px",
               four_xl: "40px",
               five_xl: "56px",
@@ -55,14 +58,25 @@
       };
     </script>
   </head>
-  <body>
+  <body class="overflow-hidden">
+    <div class="overflow-x-hidden">
+    <div  id="preloader" class="min-h-full absolute top-[0%] w-full backdrop-blur-lg z-[100]">
+      <div  class="flex flex-col items-center justify-center min-h-full absolute top-[50%] start-[50%]  translate-y-[-50%] translate-x-[-50%]">
+          <div class="w-12 xl:w-[100px] xl:h-[100px] h-12 rounded-full animate-spin
+                    border-x-8 border-solid border-purple-500 border-t-transparent"></div>
+                     <p class="text-center text-white text-[40px] xl:pt-[20px]">Loading...</p>
+      
+                    </div>          
+      </div>
+    </div>
     <header
-      class="overflow-hidden bg-[url('/assets/images/webp/header_bg.webp')] bg-no-repeat bg-center bg-cover"
+      id="header"
+      class="overflow-hidden z-30 bg-[url('/assets/images/webp/header_bg.webp')] bg-no-repeat bg-center bg-cover"
     >
       <nav
-        class="max-w-[1240px] mx-auto rounded-[129px] sm:mt-[20px] px-[20px] lg:px-[50px] bg_nav"
+        class="relative z-[100] max-w-[1240px] mx-auto rounded-[129px] sm:mt-[20px] px-[20px] lg:px-[50px] bg_nav"
       >
-        <div class="py-[15px] md:py-[10px]items-center flex justify-between">
+        <div class="py-[15px] md:py-[10px] items-center flex justify-between">
           <div
             class="flex justify-between items-center w-full lg:w-auto relative z-20"
           >
@@ -85,7 +99,7 @@
             <li>
               <a
                 onclick="hide()"
-                href="#Home"
+                href="#home"
                 class="ff_k2d text-[rgba(192,188,193)] leading-[150%] font-normal text-[16px] duration-300 hover:text-[#00E0F7]"
                 >Home</a
               >
@@ -94,7 +108,7 @@
             <li class="lg:ps-[32px]">
               <a
                 onclick="hide()"
-                href="#AGENDA"
+                href="#aboutus"
                 class="ff_k2d text-[rgba(192,188,193)] leading-[150%] font-normal text-[16px] duration-300 hover:text-[#00E0F7]"
                 >About Us</a
               >
@@ -102,7 +116,7 @@
             <li class="lg:ps-[32px]">
               <a
                 onclick="hide()"
-                href="#SPEAKERS"
+                href="#mission"
                 class="ff_k2d text-[rgba(192,188,193)] leading-[150%] font-normal text-[16px] duration-300 hover:text-[#00E0F7]"
                 >Our Mission</a
               >
@@ -110,7 +124,7 @@
             <li class="lg:ps-[32px]">
               <a
                 onclick="hide()"
-                href="#FAQ"
+                href="#gallery"
                 class="ff_k2d text-[rgba(192,188,193)] leading-[150%] font-normal text-[16px] duration-300 hover:text-[#00E0F7]"
                 >Art Showcase</a
               >
@@ -118,7 +132,7 @@
             <li class="lg:ps-[32px]">
               <a
                 onclick="hide()"
-                href="#LOGIN"
+                href="#community"
                 class="ff_k2d text-[rgba(192,188,193)] leading-[150%] font-normal text-[16px] duration-300 hover:text-[#00E0F7]"
                 >Community</a
               >
@@ -126,7 +140,7 @@
             <li class="lg:ps-[32px]">
               <a
                 onclick="hide()"
-                href="#LOGIN"
+                href="#innovation"
                 class="ff_k2d text-[rgba(192,188,193)] leading-[150%] font-normal text-[16px] duration-300 hover:text-[#00E0F7]"
                 >Get Involved</a
               >
@@ -159,20 +173,20 @@
       </nav>
       <main class="flex flex-col items-center lg:pt-[97px] relative">
         <img
-          class="h-[409.593px] md:w-[194px] xl:w-[274px] xl:h-[631px] absolute xl:top-[4%] top-[45%] right-[-2%] xl:right-[5%] z-10"
+          class="h-[409.593px] md:max-w-[154px] lg:max-w-[200px] z-[20] xl:max-w-[274px] xl:h-[631px] absolute xl:top-[4%] top-[45%] right-[-2%] xl:right-[5%] z-10"
           src="./assets/images/webp/headerright.webp"
           alt="headerright"
         />
         <img
-          class="xl:min-h-[539px]id xl:min-w-[478px] absolute top-[20%] start-[0%] header_left"
+          class="xl:min-h-[539px] xl:max-w-[478px] lg:start-[-7%] absolute top-[20%] start-[-10%] header_left"
           src="./assets/images/webp/headerleft.webp"
           alt="headerleft"
         />
         <div
-          class="max-w-[1140px] mx-auto flex flex-col items-center ps-[22px] pe-[20px]"
+          class="max-w-[1140px] mx-auto flex flex-col items-center ps-[22px] pe-[20px] relative z-20"
         >
           <p
-            class="text-center leading-[120%] text-[#01DFF7] border-1 border border-[rgba(56,52,62)] font-semibold ff_k2d px-[20px] rounded-[81px] py-[12px] backdrop_blur_20px hover:bg-[#01DFF7] duration-300 hover:text-white mx-auto text-[16px] sm:text-[20px] mt-[48px] lg:mt-0 display:block"
+            class="text-center animate__flash leading-[120%] text-[#01DFF7] border-1 border border-[rgba(56,52,62)] font-semibold ff_k2d px-[20px] rounded-[81px] py-[12px] backdrop_blur_20px hover:bg-[#01DFF7] duration-300 hover:text-white mx-auto text-[16px] sm:text-[20px] mt-[48px] lg:mt-0 display:block"
           >
             Welcome to SPRT
           </p>
@@ -182,7 +196,7 @@
             Solanas Spirited <span class="text-[#01DFF7]"> AI Meme </span> Hub
           </h1>
           <p
-            class="sm:max-w-[629px] max-w-[335px] text-[rgba(190,193,192)] text-center ff_k2d mt-[8px] text-[16px]"
+            class="sm:max-w-[593px] max-w-[335px] text-[rgba(190,193,192)] text-center ff_k2d mt-[8px] text-[16px]"
           >
             We are a vibrant AI hub within the Solana ecosystem, dedicated to
             crafting meme-based art that transcends boundaries and sparks the
@@ -203,30 +217,45 @@
     <!-- -------------About us--------------- -->
 
     <section
+      id="aboutus"
       class="bg-[url('/assets/images/png/bg_about.png')] bg-no-repeat bg-center bg-cover relative"
     >
+       <img class="absolute top-[-10%] sm:hidden start-[0] z-[40]" src="./assets/images/png/header_left_sm.png" alt="ellipse">
+     
+      <img
+        class="absolute sm:block hidden lg:top-[-20%] left-[0%] z-[49] z-[50] top-[-4%] w-[131px] h-[131px] lg:w-[587px] lg:h-[587px]"
+        src="./assets/images/webp/headerright_ellipse.webp"
+        alt="ELLIPSE"
+      />
+      <img
+        class=" min-h-[131px] w-[131px] sm:w-[314px] sm:max-h-[314px] absolute lg:top-[-30%] top-[-10%] z-30 right-[0%]"
+        src="./assets/images/webp/headerleft_ellipse.webp"
+        alt="header_left"
+      />
       <span
         class="w-full blacklayer2 sm:h-[130px] h-[101px] mt-[17px] sm:mt-[17px] absolute top-[-3%]"
       ></span>
       <div
         class="max-w-[1140px] mx-auto px-[12px] xl:pt-[126px] sm:pt-[106px] pt-[86px] xl:pb-[50px]"
       >
-        <div class="flex flex-wrap justify-center lg:justify-between flex-row">
-          <div class="lg:w-7/12 md:w-10/12 sm:5/12">
+        <div
+          class="flex flex-wrap justify-center pb-[50px] lg:justify-between flex-row"
+        >
+          <div class="lg:w-7/12 md:w-10/12 sm:5/12 relative z-[50]">
             <div class="flex justify-center lg:justify-start">
               <button
-                class="rounded-[81px] border-[1px] text-[#01DFF7] py-3 px-4 ff_k2d font-semibold leading-[120%] border-[#29262d] bg-[#110e15] hover:text-white hover:bg-[#01DFF7] duration-300"
+                class="rounded-[81px] border-[1px] text-[#01DFF7] py-3 px-4 ff_k2d font-semibold leading-[120%] border-[#29262d] bg-[#110e15] hover:text-white hover:bg-[#01DFF7] duration-300 "data-aos="fade-right" data-aos-duration="1500"
               >
                 About Us
               </button>
             </div>
             <h2
-              class="lg:text-start text-center ff_oswald leading-[122%] pt-[16px] md:text-[40px] sm:text-[36px] text-[28px] lg:text-[48px] text-white font-bold"
+              class="lg:text-start text-center ff_oswald leading-[122%] pt-[16px] md:text-[40px] sm:text-[36px] text-[28px] lg:text-[48px] text-white font-bold"data-aos="fade-right" data-aos-duration="1700"
             >
               SPRT is a community-driven movement.
             </h2>
             <p
-              class="lg:text-start text-center ff_k2d text-[16px] font-normal leading-[150%] text-[rgba(180,179,182)] pt-[16px] max-w-[335px] sm:max-w-[100%] mx-auto sm:mx-0 lg:max-w-[582px]"
+              class="lg:text-start text-center ff_k2d text-[16px] font-normal leading-[150%] text-[rgba(180,179,182)] pt-[16px] max-w-[335px] sm:max-w-[100%] mx-auto sm:mx-[0px] lg:max-w-[582px]"data-aos="fade-right" data-aos-duration="1900"
             >
               We're a collective of artists, creators, and Solana enthusiasts
               passionate about pushing the boundaries of imagination and
@@ -236,77 +265,79 @@
             <div
               class="flex flex-wrap md:flex-row items-center justify-between sm:justify-center lg:justify-between xl:justify-start sm:mb-[30px] lg:mb-0 mb-[22px] pt-[30px] lg:pt-[]"
             >
-              <div
+              <div data-aos="zoom-in" data-aos-duration="2100"
                 class="lg:w-3/12 xl:me-[50px] lg:me-[30px] w-6/12 flex lg:justify-start sm:justify-center justify-start"
                 id="tab1"
                 onClick="selectTab(1)"
               >
                 <button
-                  class="mt-[20px] lg:mt-[12px] text-white whitespace-nowrap ff_k2d font-bold tabbtn relative before:content-tabbutton before:bottom-[-30%] before:duration-300 before:transition-all before:opacity-0 active: before:absolute before:left-0"
+                  class="mt-[20px] lg:mt-[2px] text-white whitespace-nowrap ff_k2d font-bold tabbtn relative before:content-tabbutton before:bottom-[-30%] before:duration-300 before:transition-all before:opacity-0 active: before:absolute before:left-0"
                 >
                   Emphasize creativity
                 </button>
               </div>
 
-              <div
+              <div data-aos="zoom-in" data-aos-duration="1900"
                 class="xl:pe-[47px] lg:w-2/12 w-3/12 sm:w-6/12 flex lg:justify-start sm:justify-center justify-start"
                 id="tab2"
                 onClick="selectTab(2)"
               >
                 <button
-                  class="mt-[20px] lg:mt-[12px] text-white ff_k2d font-bold tabbtn relative before:content-tabbutton before:bottom-[-30%] before:duration-300 before:transition-all before:opacity-0 active: before:absolute before:left-0"
+                  class="mt-[20px] lg:mt-[2px] text-white ff_k2d font-bold tabbtn relative before:content-tabbutton before:bottom-[-30%] before:duration-300 before:transition-all before:opacity-0 active: before:absolute before:left-0"
                 >
                   Community
                 </button>
               </div>
-              <div
+              <div data-aos="zoom-in" data-aos-duration="1700"
                 class="xl:pe-[37px] lg:w-2/12 w-6/12 flex lg:justify-start sm:justify-center justify-start"
                 id="tab3"
                 onClick="selectTab(3)"
               >
                 <button
-                  class="mt-[20px] lg:mt-[12px] text-white ff_k2d font-bold tabbtn relative before:content-tabbutton before:bottom-[-30%] before:duration-300 before:transition-all before:opacity-0 active: before:absolute before:left-0"
+                  class="mt-[20px] lg:mt-[2px] text-white ff_k2d font-bold tabbtn relative before:content-tabbutton before:bottom-[-30%] before:duration-300 before:transition-all before:opacity-0 active: before:absolute before:left-0"
                 >
                   Innovation
                 </button>
               </div>
-              <div
+              <div data-aos="zoom-in" data-aos-duration="1500"
                 class="xl:pe-[37px] lg:w-2/12 w-3/12 sm:w-6/12 flex lg:justify-start sm:justify-center"
                 id="tab4"
                 onClick="selectTab(4)"
               >
                 <button
-                  class="mt-[20px] lg:mt-[12px] text-white ff_k2d font-bold tabbtn relative before:content-tabbutton before:bottom-[-30%] before:duration-300 before:transition-all before:opacity-0 active: before:absolute before:left-0"
+                  class="mt-[20px] lg:mt-[2px] text-white ff_k2d font-bold tabbtn relative before:content-tabbutton before:bottom-[-30%] before:duration-300 before:transition-all before:opacity-0 active: before:absolute before:left-0"
                 >
                   Humor
                 </button>
               </div>
             </div>
-            <button
+            <button data-aos="zoom-in"
               class="px-[20px] lg:block hidden py-3 text-white font-semibold text-base ff_k2d rounded-[129px] mt-[38px] hover:text-white duration-300 bg_nav_btn"
             >
               Read More
             </button>
             <!-- Tabs -->
           </div>
-          <div class="lg:w-4/12 xl:w-5/12 sm:w-6/12 w-full">
+          <div class="lg:w-4/12 xl:w-5/12 sm:w-6/12 w-full relative"data-aos="zoom-out" data-aos-duration="1500">
+            <img class="absolute bottom-[10%] top-[50%] translate-y-[-30%] sm:top-[50%] sm:translate-y-[-50%] " src="./assets/images/png/tab_elliose.png" alt="tabellipse">
             <div id="tab1Content">
               <div
                 class="relative px-xl-0 px-[12px] sm:max-w-[409px] max-w-[335px] min-h-[277px] sm:min-h-[403px] flex tab_bg flex-col items-center justify-center rounded-[20px] pt-[39.43px] sm:pt-[55px] pb-[37px] border-[2px] border-[rgba(42,43,54)] mx-auto"
               >
+
                 <img
                   class="absolute bottom-0 w-[217.105px] h-[6.87px] xl:w-[316px] xl:h-[10px]"
                   src="./assets/images/png/tabline.png"
                   alt="tabline"
                 />
-                <img src="./assets/images/svg/content1.svg" alt="contemt1" />
+                <img class="w-[54.963px] h-[54.963px] sm:w-[80px] sm:h-[80px]"data-aos="zoom-out" data-aos-duration="1500"src="./assets/images/svg/content1.svg" alt="contemt1" />
                 <h4
-                  class="pt-[20px] text-white ff_oswald font-bold text-center text-[28px] leading-[122%]"
+                  class="pt-[20px] text-white ff_oswald font-bold text-center text-[19.237px] sm:text-[28px] leading-[122%]" data-aos="zoom-in" data-aos-duration="1500"
                 >
                   Emphasize creativity
                 </h4>
                 <p
-                  class="text-center pt-[16px] max-w-[375px] text-white ff_k2d leading-[150%] opacity-[70%]"
+                  class="text-center text-[10.993px] sm:text-[16px] pt-[11px] sm:pt-[16px] max-w-[256.953px] sm:max-w-[374px] text-white ff_k2d leading-[150%] opacity-[70%]" data-aos="zoom-in" data-aos-duration="1500"
                 >
                   SPRT thrives on boundless creativity. We encourage our
                   community to unleash their imagination, pushing the boundaries
@@ -318,21 +349,21 @@
             </div>
             <div class="hidden" id="tab2Content">
               <div
-                class="relative px-xl-0 px-[12px] sm:max-w-[409px] max-w-[335px] min-h-[277px] sm:min-h-[403px] flex tab_bg flex-col items-center justify-center rounded-[20px] pt-[39.43px] sm:pt-[55px] pb-[37px] border-[2px] border-[rgba(42,43,54)] mx-auto"
+                class="relative px-xl-0 px-[12px] sm:max-w-[409px] max-w-[335px] min-h-[277px] sm:min-h-[403px] flex tab_bg flex-col items-center rounded-[20px] pt-[39.43px] sm:pt-[55px] pb-[37px] border-[2px] border-[rgba(42,43,54)] mx-auto"
               >
                 <img
                   class="absolute bottom-0 w-[217.105px] h-[6.87px] xl:w-[316px] xl:h-[10px]"
                   src="./assets/images/png/tabline.png"
                   alt="tabline"
                 />
-                <img src="./assets/images/svg/community.svg" alt="contemt1" />
+                <img class="w-[54.963px] h-[54.963px] sm:w-[80px] sm:h-[80px]"data-aos="zoom-out" data-aos-duration="1500" src="./assets/images/svg/community.svg" alt="contemt1" />
                 <h4
-                  class="pt-[20px] text-white ff_oswald font-bold text-center text-[28px] leading-[122%]"
+                  class="pt-[20px] text-white ff_oswald font-bold text-center text-[19.237px] sm:text-[28px] leading-[122%]" data-aos="zoom-in" data-aos-duration="1500"
                 >
                   Community
                 </h4>
                 <p
-                  class="text-center text-white ff_k2d leading-[150%] max-w-[374px] opacity-[70%] pt-[16px]"
+                  class="text-center text-[10.993px] sm:text-[16px] pt-[11px] sm:pt-[16px] max-w-[256.953px] sm:max-w-[374px] text-white ff_k2d leading-[150%] opacity-[70%]" data-aos="zoom-in" data-aos-duration="1700"
                 >
                   Our community is the heart and soul of SPRT. We're a diverse,
                   passionate group of artists, technologists, and enthusiasts
@@ -344,21 +375,21 @@
             </div>
             <div class="hidden" id="tab3Content">
               <div
-                class="relative px-xl-0 px-[12px] sm:max-w-[409px] max-w-[335px] min-h-[277px] sm:min-h-[403px] flex tab_bg flex-col items-center justify-center rounded-[20px] pt-[39.43px] sm:pt-[55px] pb-[37px] border-[2px] border-[rgba(42,43,54)] mx-auto"
+                class="relative px-xl-0 px-[12px] sm:max-w-[409px] max-w-[335px] min-h-[277px] sm:min-h-[403px] flex tab_bg flex-col items-center rounded-[20px] pt-[39.43px] sm:pt-[55px] pb-[37px] border-[2px] border-[rgba(42,43,54)] mx-auto"
               >
                 <img
                   class="absolute bottom-0 w-[217.105px] h-[6.87px] xl:w-[316px] xl:h-[10px]"
                   src="./assets/images/png/tabline.png"
                   alt="tabline"
                 />
-                <img src="./assets/images/svg/innovation.svg" alt="contemt1" />
+                <img class="w-[54.963px] h-[54.963px] sm:w-[80px] sm:h-[80px]"data-aos="zoom-out" data-aos-duration="1500" src="./assets/images/svg/innovation.svg" alt="contemt1" />
                 <h4
-                  class="pt-[20px] text-white ff_oswald font-bold text-center text-[28px] leading-[122%]"
+                  class="pt-[20px] text-white ff_oswald font-bold text-center text-[19.237px] sm:text-[28px] leading-[122%]" data-aos="zoom-in" data-aos-duration="1500"
                 >
                   Innovation
                 </h4>
                 <p
-                  class="text-center text-white pt-[16px] ff_k2d leading-[150%] max-w-[366px] opacity-[70%]"
+                  class="text-center text-[10.993px] sm:text-[16px] pt-[11px] sm:pt-[16px] max-w-[256.953px] sm:max-w-[366px] text-white ff_k2d leading-[150%] opacity-[70%]" data-aos="zoom-in" data-aos-duration="1900"
                 >
                   At SPRT, innovation is our hallmark. We're pioneers in
                   blending AI technology with artistic endeavors on the Solana
@@ -371,21 +402,21 @@
             </div>
             <div class="hidden" id="tab4Content">
               <div
-                class="relative px-xl-0 px-[12px] sm:max-w-[409px] max-w-[335px] min-h-[277px] sm:min-h-[403px] flex tab_bg flex-col items-center justify-center rounded-[20px] pt-[39.43px] sm:pt-[55px] pb-[37px] border-[2px] border-[rgba(42,43,54)] mx-auto"
+                class="relative px-xl-0 px-[12px] sm:max-w-[409px] max-w-[335px] min-h-[277px] sm:min-h-[403px] flex tab_bg flex-col items-center  rounded-[20px] pt-[39.43px] sm:pt-[55px] pb-[37px] border-[2px] border-[rgba(42,43,54)] mx-auto"
               >
                 <img
                   class="absolute bottom-0 w-[217.105px] h-[6.87px] xl:w-[316px] xl:h-[10px]"
                   src="./assets/images/png/tabline.png"
                   alt="tabline"
                 />
-                <img src="./assets/images/svg/humor.svg" alt="contemt1" />
+                <img class="w-[54.963px] h-[54.963px] sm:w-[80px] sm:h-[80px]"data-aos="zoom-out" data-aos-duration="1500" src="./assets/images/svg/humor.svg" alt="contemt1" />
                 <h4
-                  class="pt-[20px] text-white ff_oswald font-bold text-center text-[28px] leading-[122%]"
+                  class="pt-[20px] text-white ff_oswald font-bold text-center text-[19.237px] sm:text-[28px] leading-[122%]" data-aos="zoom-in" data-aos-duration="1500"
                 >
                   Humor
                 </h4>
                 <p
-                  class="text-center text-white ff_k2d pt-[16px] leading-[150%] max-w-[374px] opacity-[70%]"
+                  class="text-center text-[10.993px] sm:text-[16px] pt-[11px] sm:pt-[16px] max-w-[256.953px] sm:max-w-[375px] text-white ff_k2d leading-[150%] opacity-[70%]" data-aos="zoom-in" data-aos-duration="2100"
                 >
                   Laughter is the essence of SPRT. Humor infuses life into our
                   creations, making them not just visually appealing but also
@@ -394,32 +425,43 @@
                 </p>
               </div>
             </div>
+           <div class="flex items-center justify-center"> <button data-aos="zoom-in"
+              class="px-[20px] lg:hidden  py-3 text-white font-semibold text-base ff_k2d rounded-[129px] mt-[51px] hover:text-white duration-300 bg_nav_btn"
+            >
+              Read More
+            </button></div> 
           </div>
         </div>
-      
+      </div>
+    </section>
+<!-- -------------------Art---------- -->
+    <section class="bg-black mt-[-1px]">
+      <div class="max-w-[1140px] mx-auto px-3">
+        <div class="flex items-center justify-center z-1 relative">
+          <button
+            class="rounded-[81px] border-[1px] text-[#01DFF7] py-3 px-4 ff_k2d font-semibold leading-[120%] border-[#29262d] bg-[#110e15] hover:text-white hover:bg-[#01DFF7] duration-300"
+          >
+            ArtShowcase
+          </button>
+        </div>
+
+        <div class="flex items-center justify-center text-center" id="gallery">
+          <h1
+            class="ff_oswald text-white mb-0 text-[28px] sm:text-[35px] md:text-[40px] lg:text-[48px] leading-[122%] font-bold mt-4 mb-4"
+          >
+            Our Gallery
+          </h1>
+        </div>
+        <p
+          class="opacity-70 ff_k2d text-white font-normal leading-[150%] text-center max-w-[558px] mx-auto"
+        >
+          Step into our digital haven, where creativity knows no bounds. Spark
+          your own creativity by seeing some of our AI creations.
+        </p>
       </div>
     </section>
 
-     <section class="bg-black mt-[-1px]">
-        <div class="max-w-[1140px] mx-auto px-3">
-            <div class="flex items-center justify-center z-1 relative">
-                <button
-                    class="rounded-[81px] border-[1px] text-[#01DFF7] py-3 px-4 ff_k2d font-semibold leading-[120%] border-[#29262d] bg-[#110e15] hover:text-white hover:bg-[#01DFF7] duration-300">ArtShowcase</button>
-            </div>
-
-            <div class="flex items-center justify-center text-center">
-                <h1
-                    class="ff_oswald text-white mb-0 text-[28px] sm:text-[35px] md:text-[40px] lg:text-[48px] leading-[122%] font-bold mt-4 mb-4">
-                    Our Gallery</h1>
-            </div>
-            <p class="opacity-70 ff_k2d text-white font-normal leading-[150%] text-center max-w-[558px] mx-auto">
-                Step into our digital haven, where creativity knows no bounds. Spark your own creativity by seeing some
-                of our AI creations.</p>
-
-        </div>
-    </section> 
-
-    <section class="bg-black relative mt-[-1px]">
+    <section id="mission" class="bg-black relative mt-[-1px]">
       <div class="absolute md:bottom-[-3%] lg:bottom-[-9%]">
         <img
           class="max-w-full h-[177px] z-1"
@@ -454,7 +496,7 @@
             <div
               class="flex items-center justify-center flex-col-reverse lg:flex-row flex-wrap my-2.5"
             >
-              <div class="lg:w-1/2 pt-8 lg:pt-0">
+              <div class="lg:w-1/2 pt-8 lg:pt-0" data-aos="zoom-out-right" data-aos-duration="2100">
                 <img
                   class="max-w-full w-[551px]"
                   src="./assets/images/webp/redifined_sec_img.webp"
@@ -467,7 +509,7 @@
                 >
                   <button
                     class="rounded-[81px] border-[1px] text-[#01DFF7] py-3 px-4 ff_k2d font-semibold leading-[120%] border-[#29262d] bg-[#110e15] hover:text-white hover:bg-[#01DFF7] duration-300"
-                  >
+                  data-aos="zoom-out-left" data-aos-duration="1500">
                     Our Mission
                   </button>
                 </div>
@@ -475,14 +517,16 @@
                 <div
                   class="flex items-center justify-center lg:justify-start text-center lg:text-start"
                 >
-                  <h1
+                  <h1 data-aos="zoom-out-left"
+                  data-aos-duration="1700"
                     class="ff_oswald text-white mb-0 text-[28px] sm:text-[35px] md:text-[40px] lg:text-[48px] leading-[122%] font-bold mt-4 mb-4"
                   >
                     Redefining meme-based art on Solana
                   </h1>
                 </div>
 
-                <p
+                <p data-aos="zoom-out-left"
+                  data-aos-duration="1900"
                   class="opacity-70 ff_k2d text-white font-normal leading-[150%] text-center lg:text-start"
                 >
                   Our mission at SPRT is clear - to redefine the norms of
@@ -491,7 +535,8 @@
                   offering a fresh perspective in the crypto art sphere.
                 </p>
 
-                <div class="pt-6 mt-1.5">
+                <div class="pt-6 mt-1.5" data-aos="zoom-out-left"
+                  data-aos-duration="1700">
                   <div
                     class="border border-solid max-w-[558px] rounded-[6px] border-[#27222e] backdrop_blur_20px"
                   >
@@ -510,7 +555,8 @@
                   </div>
                 </div>
 
-                <div class="lg:pt-5 sm:pt-4 pt-3">
+                <div class="lg:pt-5 sm:pt-4 pt-3" data-aos="zoom-out-left"
+                  data-aos-duration="2100">
                   <div
                     class="border border-solid max-w-[558px] rounded-[6px] border-[#27222e] backdrop_blur_20px"
                   >
@@ -529,7 +575,8 @@
                   </div>
                 </div>
 
-                <div class="lg:pt-5 sm:pt-4 pt-3">
+                <div data-aos="zoom-out-left"
+                  data-aos-duration="2300" class="lg:pt-5 sm:pt-4 pt-3">
                   <div
                     class="border border-solid max-w-[558px] rounded-[6px] border-[#27222e] backdrop_blur_20px"
                   >
@@ -684,22 +731,25 @@
             </svg> -->
       </div>
 
-      <div class="max-w-[1140px] px-3 mx-auto pb-24 relative z-[5]">
+      <div class="max-w-[1140px] px-3 mx-auto pb-24 relative z-[5]"id="community">
         <div class="flex items-center justify-center flex-col">
-          <button
+          <button data-aos="zoom-out"
+                  data-aos-duration="2100"
             class="rounded-[81px] border-[1px] text-[#01DFF7] py-3 px-4 ff_k2d font-semibold leading-[120%] border-[#29262d] bg-[#110e15] hover:text-white hover:bg-[#01DFF7] duration-300 relative z-1"
           >
             Events
           </button>
 
-          <h1
+          <h1 data-aos="zoom-out"
+                  data-aos-duration="2300"
             class="ff_oswald text-white mb-0 text-[36px] sm:text-[40px] md:text-[44px] lg:text-[48px] leading-[122%] font-bold mt-4 mb-4"
           >
             Our community events
           </h1>
 
           <div class="max-w-[752px]">
-            <p
+            <p data-aos="zoom-out"
+                  data-aos-duration="2700"
               class="opacity-70 ff_k2d text-white font-normal leading-[150%] text-center"
             >
               Join us for activities that bring our community together. From
@@ -710,7 +760,8 @@
           </div>
         </div>
 
-        <div class="mt-10">
+        <div class="mt-10"data-aos="zoom-out"
+                  data-aos-duration="2500">
           <div class="flex items-center justify-between center_slider">
             <div class="w-1/3">
               <div
@@ -1034,7 +1085,8 @@
             </div>
           </div>
 
-          <div class="mt-28 sm:mt-14 flex items-center justify-center">
+          <div class="mt-28 sm:mt-14 flex items-center justify-center"data-aos="zoom-in"
+                  data-aos-duration="2300">
             <button
               class="px-5 py-3 rounded-[110px] ff_k2d text-white font-[16px] font-semibold leading-normal bg_nav_btn"
             >
@@ -1065,7 +1117,8 @@
 
       <div class="max-w-[1140px] mx-auto px-5 sm:px-3 sm:pt-0 pt-12">
         <div class="flex items-center justify-center z-1 relative">
-          <button
+          <button data-aos="zoom-in"
+                  data-aos-duration="2300"
             class="rounded-[81px] border-[1px] text-[#01DFF7] py-3 px-4 ff_k2d font-semibold leading-[120%] border-[#29262d] bg-[#110e15] hover:text-white hover:bg-[#01DFF7] duration-300"
           >
             Tokenomics
@@ -1073,7 +1126,8 @@
         </div>
 
         <div class="flex items-center justify-center text-center">
-          <h1
+          <h1 data-aos="zoom-in"
+                  data-aos-duration="2300"
             class="ff_oswald text-white mb-0 text-[28px] sm:text-[35px] md:text-[40px] lg:text-[48px] leading-[122%] font-bold mt-2.5 mb-2.5 sm:mt-4 sm:mb-4"
           >
             Our Tokenomics
@@ -1081,7 +1135,8 @@
         </div>
 
         <div class="flex items-center justify-center">
-          <p
+          <p data-aos="zoom-in"
+                  data-aos-duration="2300"
             class="opacity-70 ff_k2d text-white font-normal leading-[150%] text-center max-w-[691px]"
           >
             SPRT is proudly 100% community-owned - there are no pre-sales. We
@@ -1090,10 +1145,10 @@
           </p>
         </div>
 
-        <div
+        <div 
           class="flex items-center justify-center flex-wrap mt-8 sm:mt-14 md:mt-[77px] gap-11 sm:gap-14 z-[1]"
         >
-          <img
+          <img 
             class="sm:block hidden sm:!max-w-[480px] sm:!min-h-[300px]"
             src="./assets/images/webp/Tokenomics_circle.webp"
             alt="Tokenomics_circle.webp"
@@ -1104,7 +1159,10 @@
             alt="Tokenomics_circle.webp"
           />
 
-          <div
+          <div data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="500"
             class="border-2 rounded-[12px] py-7 px-3 border-[#1f1f1f] w-[262px] min-h-[209px] bg-[#060606] max-w-full relative z-[1]"
           >
             <img
@@ -1233,6 +1291,15 @@
         </div>
       </div>
     </footer>
+     </div>
+    <!------------preloader --->
+    <script>
+     setTimeout(() => {
+  document.getElementById("preloader").classList.add("hidden");
+  preloader.classList.add("pointer_event_none");
+  document.body.classList.remove("overflow-hidden");
+}, 3000);
+    </script>
     <!-- ---------Nav-------- -->
     <script>
       function show() {
@@ -1316,5 +1383,9 @@
         ],
       });
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
   </body>
 </html>
