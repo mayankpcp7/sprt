@@ -1,11 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=K2D:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap");
-
+html,
+body {
+  scroll-behavior: smooth;
+}
 .ff_oswald {
   font-family: "Oswald";
 }
 
 .ff_k2d {
   font-family: "K2D";
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(250deg, #35d3ff -0.64%, #a963fb 103.6%);
+  border-radius: 5px;
 }
 .bg_nav_btn {
   box-shadow: 0px 0px 6px 0px rgba(118, 35, 198, 0.8);
@@ -17,12 +35,7 @@
     #fff;
 }
 .bg_nav_btn:hover {
-  background: linear-gradient(
-      93.56% 8% 120.14% at 119.17%,
-
-      #8b00bd 72.13% #00e0f7 0%
-    ),
-    #fff;
+  box-shadow: 0px 0px 42px 0px rgb(119, 35, 198);
 }
 .blacklayer {
   background: linear-gradient(360deg, #000 37.24%, rgba(0, 0, 0, 0.01) 88.23%);
@@ -43,13 +56,46 @@
     top: 49% !important;
     left: -8%;
   }
+  .next_arrow {
+    right: 5%;
+    bottom: 10%;
+  }
+  .prev_arrow {
+    bottom: 10%;
+    left: 5%;
+  }
 }
 @media (max-width: 608px) {
+  .slick-slide {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
   .header_left {
     min-height: 349.742px !important;
     max-width: 274.461px;
     top: 60% !important;
     left: -20% !important;
+  }
+  .next_arrow {
+    right: 33%;
+    bottom: 17%;
+  }
+  .prev_arrow {
+    bottom: 17%;
+    left: 33%;
+  }
+}
+
+@media (min-width: 1333px) {
+  .next_arrow {
+    top: 49%;
+    right: 5%;
+  }
+  .prev_arrow {
+    top: 49%;
+    left: 5%;
   }
 }
 .tab_bg {
@@ -83,54 +129,7 @@
     #8b00bd 88.12%
   );
 }
-.slick-slide{
+.slick-slide {
   padding-left: 12px !important;
   padding-right: 12px !important;
-}
-/* preloader */
-
-.wrapper{
-  transform: scale(1.5);
-}
-.loader{
- animation: rotate 3.5s linear infinite;
-}
- 
-@keyframes rotate {
-  30%{
-    transform: rotate(220deg);
-  }
-  40%{
-  transform: rotate(450deg);
-    opacity: 1;
- }
- 75%{
-  transform: rotate(720deg);
-  opacity: 1;
- }
- 76%{
-  opacity: 0;
- }
- 100%{
-  opacity: 0;
-  transform: rotate(0deg);
- }
-}
-.loader:nth-child(1){
-  animation-delay: 0.15s;
-}
-.loader:nth-child(2){
-  animation-delay: 0.3s;
-}
-.loader:nth-child(3){
-  animation-delay: 0.45s;
-}
-.loader:nth-child(4){
-  animation-delay: 0.6s;
-}
-.loader:nth-child(5){
-  animation-delay: 0.75s;
-}
-.loader:nth-child(6){
-  animation-delay: 0.9s;
 }

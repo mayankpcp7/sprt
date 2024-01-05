@@ -4,13 +4,17 @@
     <title>Sprt</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="./assets/images/webp/LOGO_SPRT.webp">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/webp/LOGO_SPRT.webp"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-   <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
@@ -25,7 +29,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    
+
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
@@ -59,1246 +63,1481 @@
     </script>
   </head>
   <body class="overflow-hidden">
-    <div class="overflow-x-hidden">
-    <div  id="preloader" class="min-h-full absolute top-[0%] w-full backdrop-blur-lg z-[100]">
-      <div  class="flex flex-col items-center justify-center min-h-full absolute top-[50%] start-[50%]  translate-y-[-50%] translate-x-[-50%]">
-          <div class="w-12 xl:w-[100px] xl:h-[100px] h-12 rounded-full animate-spin
-                    border-x-8 border-solid border-purple-500 border-t-transparent"></div>
-                     <p class="text-center text-white text-[40px] xl:pt-[20px]">Loading...</p>
-      
-                    </div>          
-      </div>
-    </div>
-    <header
-      id="header"
-      class="overflow-hidden z-30 bg-[url('/assets/images/webp/header_bg.webp')] bg-no-repeat bg-center bg-cover"
+    <div
+      id="preloader"
+      class="min-h-full absolute top-[0%] z-[300] w-full backdrop-blur-lg z-[100]"
     >
-      <nav
-        class="relative z-[100] max-w-[1240px] mx-auto rounded-[129px] sm:mt-[20px] px-[20px] lg:px-[50px] bg_nav"
-      >
-        <div class="py-[15px] md:py-[10px] items-center flex justify-between">
-          <div
-            class="flex justify-between items-center w-full lg:w-auto relative z-20"
-          >
-            <img
-              class="cursor-pointer w-[42px] h-[42px] sm:w-[60px] sm:h-[60px]"
-              src="./assets/images/svg/navlogo.svg"
-              alt="logo"
-            />
-            <button
-              onclick="show()"
-              class="lg:hidden absolute end-0 text-black"
-            >
-              <img src="./assets/images/svg/nav_open.svg" alt="nav_open" />
-            </button>
-          </div>
-          <ul
-            class="lg:flex font-semibold flex gap-5 lg:gap-0 lg:flex-row bg-black lg:bg-transparent min-h-screen lg:min-h-fit justify-center lg:justify-end items-center w-full lg:relative z-20 fixed left-[-100%] lg:start-0 top-0 flex-col h-full ps-0 transition-all duration-300 ease-linear"
-            id="navMenu"
-          >
-            <li>
-              <a
-                onclick="hide()"
-                href="#home"
-                class="ff_k2d text-[rgba(192,188,193)] leading-[150%] font-normal text-[16px] duration-300 hover:text-[#00E0F7]"
-                >Home</a
-              >
-            </li>
-
-            <li class="lg:ps-[32px]">
-              <a
-                onclick="hide()"
-                href="#aboutus"
-                class="ff_k2d text-[rgba(192,188,193)] leading-[150%] font-normal text-[16px] duration-300 hover:text-[#00E0F7]"
-                >About Us</a
-              >
-            </li>
-            <li class="lg:ps-[32px]">
-              <a
-                onclick="hide()"
-                href="#mission"
-                class="ff_k2d text-[rgba(192,188,193)] leading-[150%] font-normal text-[16px] duration-300 hover:text-[#00E0F7]"
-                >Our Mission</a
-              >
-            </li>
-            <li class="lg:ps-[32px]">
-              <a
-                onclick="hide()"
-                href="#gallery"
-                class="ff_k2d text-[rgba(192,188,193)] leading-[150%] font-normal text-[16px] duration-300 hover:text-[#00E0F7]"
-                >Art Showcase</a
-              >
-            </li>
-            <li class="lg:ps-[32px]">
-              <a
-                onclick="hide()"
-                href="#community"
-                class="ff_k2d text-[rgba(192,188,193)] leading-[150%] font-normal text-[16px] duration-300 hover:text-[#00E0F7]"
-                >Community</a
-              >
-            </li>
-            <li class="lg:ps-[32px]">
-              <a
-                onclick="hide()"
-                href="#innovation"
-                class="ff_k2d text-[rgba(192,188,193)] leading-[150%] font-normal text-[16px] duration-300 hover:text-[#00E0F7]"
-                >Get Involved</a
-              >
-            </li>
-
-            <button
-              class="px-[20px] py-3 text-white font-semibold text-base ff_k2d rounded-[129px] xl:ms-[50px] lg:ms-4 hover:text-white duration-300 bg_nav_btn"
-            >
-              Contact Us
-            </button>
-            <button
-              onclick="hide()"
-              class="absolute lg:hidden top-[15px] right-[20px]"
-            >
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M25.9846 11.6665L20.0013 17.6498L14.018 11.6665L11.668 14.0165L17.6513 19.9998L11.668 25.9832L14.018 28.3332L20.0013 22.3498L25.9846 28.3332L28.3346 25.9832L22.3513 19.9998L28.3346 14.0165L25.9846 11.6665Z"
-                  fill="white"
-                />
-              </svg>
-            </button>
-          </ul>
-        </div>
-      </nav>
-      <main class="flex flex-col items-center lg:pt-[97px] relative">
-        <img
-          class="h-[409.593px] md:max-w-[154px] lg:max-w-[200px] z-[20] xl:max-w-[274px] xl:h-[631px] absolute xl:top-[4%] top-[45%] right-[-2%] xl:right-[5%] z-10"
-          src="./assets/images/webp/headerright.webp"
-          alt="headerright"
-        />
-        <img
-          class="xl:min-h-[539px] xl:max-w-[478px] lg:start-[-7%] absolute top-[20%] start-[-10%] header_left"
-          src="./assets/images/webp/headerleft.webp"
-          alt="headerleft"
-        />
-        <div
-          class="max-w-[1140px] mx-auto flex flex-col items-center ps-[22px] pe-[20px] relative z-20"
-        >
-          <p
-            class="text-center animate__flash leading-[120%] text-[#01DFF7] border-1 border border-[rgba(56,52,62)] font-semibold ff_k2d px-[20px] rounded-[81px] py-[12px] backdrop_blur_20px hover:bg-[#01DFF7] duration-300 hover:text-white mx-auto text-[16px] sm:text-[20px] mt-[48px] lg:mt-0 display:block"
-          >
-            Welcome to SPRT
-          </p>
-          <h1
-            class="ff_oswald font-bold text-white sm:text-[50px] text-[32px] md:text-[60px] lg:text-[75px] xl:text-[80px] leading-[120%] max-w-[258px] sm:max-w-[611px] text-center mt-[12px] sm:mt-[16px]"
-          >
-            Solanas Spirited <span class="text-[#01DFF7]"> AI Meme </span> Hub
-          </h1>
-          <p
-            class="sm:max-w-[593px] max-w-[335px] text-[rgba(190,193,192)] text-center ff_k2d mt-[8px] text-[16px]"
-          >
-            We are a vibrant AI hub within the Solana ecosystem, dedicated to
-            crafting meme-based art that transcends boundaries and sparks the
-            imagination. We represent the true Spirit of Solana - uniting in our
-            pursuit to be the best!
-          </p>
-          <button
-            class="px-[20px] py-3 text-white font-semibold text-base ff_k2d rounded-[129px] mt-[24px] sm:mt-[32px] mb-[91px] md:mb-[0px] hover:text-white duration-300 bg_nav_btn"
-          >
-            Join the Spirit
-          </button>
-        </div>
-        <span
-          class="w-full blacklayer h-[106px] mt-[200px] sm:mt-[91px] relative"
-        ></span>
-      </main>
-    </header>
-    <!-- -------------About us--------------- -->
-
-    <section
-      id="aboutus"
-      class="bg-[url('/assets/images/png/bg_about.png')] bg-no-repeat bg-center bg-cover relative"
-    >
-       <img class="absolute top-[-10%] sm:hidden start-[0] z-[40]" src="./assets/images/png/header_left_sm.png" alt="ellipse">
-     
-      <img
-        class="absolute sm:block hidden lg:top-[-20%] left-[0%] z-[49] z-[50] top-[-4%] w-[131px] h-[131px] lg:w-[587px] lg:h-[587px]"
-        src="./assets/images/webp/headerright_ellipse.webp"
-        alt="ELLIPSE"
-      />
-      <img
-        class=" min-h-[131px] w-[131px] sm:w-[314px] sm:max-h-[314px] absolute lg:top-[-30%] top-[-10%] z-30 right-[0%]"
-        src="./assets/images/webp/headerleft_ellipse.webp"
-        alt="header_left"
-      />
-      <span
-        class="w-full blacklayer2 sm:h-[130px] h-[101px] mt-[17px] sm:mt-[17px] absolute top-[-3%]"
-      ></span>
       <div
-        class="max-w-[1140px] mx-auto px-[12px] xl:pt-[126px] sm:pt-[106px] pt-[86px] xl:pb-[50px]"
+        class="flex flex-col items-center justify-center min-h-full absolute top-[50%] start-[50%] translate-y-[-50%] translate-x-[-50%]"
       >
         <div
-          class="flex flex-wrap justify-center pb-[50px] lg:justify-between flex-row"
-        >
-          <div class="lg:w-7/12 md:w-10/12 sm:5/12 relative z-[50]">
-            <div class="flex justify-center lg:justify-start">
-              <button
-                class="rounded-[81px] border-[1px] text-[#01DFF7] py-3 px-4 ff_k2d font-semibold leading-[120%] border-[#29262d] bg-[#110e15] hover:text-white hover:bg-[#01DFF7] duration-300 "data-aos="fade-right" data-aos-duration="1500"
-              >
-                About Us
-              </button>
-            </div>
-            <h2
-              class="lg:text-start text-center ff_oswald leading-[122%] pt-[16px] md:text-[40px] sm:text-[36px] text-[28px] lg:text-[48px] text-white font-bold"data-aos="fade-right" data-aos-duration="1700"
-            >
-              SPRT is a community-driven movement.
-            </h2>
-            <p
-              class="lg:text-start text-center ff_k2d text-[16px] font-normal leading-[150%] text-[rgba(180,179,182)] pt-[16px] max-w-[335px] sm:max-w-[100%] mx-auto sm:mx-[0px] lg:max-w-[582px]"data-aos="fade-right" data-aos-duration="1900"
-            >
-              We're a collective of artists, creators, and Solana enthusiasts
-              passionate about pushing the boundaries of imagination and
-              possibilities through cartoon-based AI art on the Solana
-              blockchain.
-            </p>
-            <div
-              class="flex flex-wrap md:flex-row items-center justify-between sm:justify-center lg:justify-between xl:justify-start sm:mb-[30px] lg:mb-0 mb-[22px] pt-[30px] lg:pt-[]"
-            >
-              <div data-aos="zoom-in" data-aos-duration="2100"
-                class="lg:w-3/12 xl:me-[50px] lg:me-[30px] w-6/12 flex lg:justify-start sm:justify-center justify-start"
-                id="tab1"
-                onClick="selectTab(1)"
-              >
-                <button
-                  class="mt-[20px] lg:mt-[2px] text-white whitespace-nowrap ff_k2d font-bold tabbtn relative before:content-tabbutton before:bottom-[-30%] before:duration-300 before:transition-all before:opacity-0 active: before:absolute before:left-0"
-                >
-                  Emphasize creativity
-                </button>
-              </div>
-
-              <div data-aos="zoom-in" data-aos-duration="1900"
-                class="xl:pe-[47px] lg:w-2/12 w-3/12 sm:w-6/12 flex lg:justify-start sm:justify-center justify-start"
-                id="tab2"
-                onClick="selectTab(2)"
-              >
-                <button
-                  class="mt-[20px] lg:mt-[2px] text-white ff_k2d font-bold tabbtn relative before:content-tabbutton before:bottom-[-30%] before:duration-300 before:transition-all before:opacity-0 active: before:absolute before:left-0"
-                >
-                  Community
-                </button>
-              </div>
-              <div data-aos="zoom-in" data-aos-duration="1700"
-                class="xl:pe-[37px] lg:w-2/12 w-6/12 flex lg:justify-start sm:justify-center justify-start"
-                id="tab3"
-                onClick="selectTab(3)"
-              >
-                <button
-                  class="mt-[20px] lg:mt-[2px] text-white ff_k2d font-bold tabbtn relative before:content-tabbutton before:bottom-[-30%] before:duration-300 before:transition-all before:opacity-0 active: before:absolute before:left-0"
-                >
-                  Innovation
-                </button>
-              </div>
-              <div data-aos="zoom-in" data-aos-duration="1500"
-                class="xl:pe-[37px] lg:w-2/12 w-3/12 sm:w-6/12 flex lg:justify-start sm:justify-center"
-                id="tab4"
-                onClick="selectTab(4)"
-              >
-                <button
-                  class="mt-[20px] lg:mt-[2px] text-white ff_k2d font-bold tabbtn relative before:content-tabbutton before:bottom-[-30%] before:duration-300 before:transition-all before:opacity-0 active: before:absolute before:left-0"
-                >
-                  Humor
-                </button>
-              </div>
-            </div>
-            <button data-aos="zoom-in"
-              class="px-[20px] lg:block hidden py-3 text-white font-semibold text-base ff_k2d rounded-[129px] mt-[38px] hover:text-white duration-300 bg_nav_btn"
-            >
-              Read More
-            </button>
-            <!-- Tabs -->
-          </div>
-          <div class="lg:w-4/12 xl:w-5/12 sm:w-6/12 w-full relative"data-aos="zoom-out" data-aos-duration="1500">
-            <img class="absolute bottom-[10%] top-[50%] translate-y-[-30%] sm:top-[50%] sm:translate-y-[-50%] " src="./assets/images/png/tab_elliose.png" alt="tabellipse">
-            <div id="tab1Content">
-              <div
-                class="relative px-xl-0 px-[12px] sm:max-w-[409px] max-w-[335px] min-h-[277px] sm:min-h-[403px] flex tab_bg flex-col items-center justify-center rounded-[20px] pt-[39.43px] sm:pt-[55px] pb-[37px] border-[2px] border-[rgba(42,43,54)] mx-auto"
-              >
-
-                <img
-                  class="absolute bottom-0 w-[217.105px] h-[6.87px] xl:w-[316px] xl:h-[10px]"
-                  src="./assets/images/png/tabline.png"
-                  alt="tabline"
-                />
-                <img class="w-[54.963px] h-[54.963px] sm:w-[80px] sm:h-[80px]"data-aos="zoom-out" data-aos-duration="1500"src="./assets/images/svg/content1.svg" alt="contemt1" />
-                <h4
-                  class="pt-[20px] text-white ff_oswald font-bold text-center text-[19.237px] sm:text-[28px] leading-[122%]" data-aos="zoom-in" data-aos-duration="1500"
-                >
-                  Emphasize creativity
-                </h4>
-                <p
-                  class="text-center text-[10.993px] sm:text-[16px] pt-[11px] sm:pt-[16px] max-w-[256.953px] sm:max-w-[374px] text-white ff_k2d leading-[150%] opacity-[70%]" data-aos="zoom-in" data-aos-duration="1500"
-                >
-                  SPRT thrives on boundless creativity. We encourage our
-                  community to unleash their imagination, pushing the boundaries
-                  of artistic expression. From futuristic cyberpunk designs to
-                  playful memes, every creation is an opportunity to explore new
-                  artistic horizons.
-                </p>
-              </div>
-            </div>
-            <div class="hidden" id="tab2Content">
-              <div
-                class="relative px-xl-0 px-[12px] sm:max-w-[409px] max-w-[335px] min-h-[277px] sm:min-h-[403px] flex tab_bg flex-col items-center rounded-[20px] pt-[39.43px] sm:pt-[55px] pb-[37px] border-[2px] border-[rgba(42,43,54)] mx-auto"
-              >
-                <img
-                  class="absolute bottom-0 w-[217.105px] h-[6.87px] xl:w-[316px] xl:h-[10px]"
-                  src="./assets/images/png/tabline.png"
-                  alt="tabline"
-                />
-                <img class="w-[54.963px] h-[54.963px] sm:w-[80px] sm:h-[80px]"data-aos="zoom-out" data-aos-duration="1500" src="./assets/images/svg/community.svg" alt="contemt1" />
-                <h4
-                  class="pt-[20px] text-white ff_oswald font-bold text-center text-[19.237px] sm:text-[28px] leading-[122%]" data-aos="zoom-in" data-aos-duration="1500"
-                >
-                  Community
-                </h4>
-                <p
-                  class="text-center text-[10.993px] sm:text-[16px] pt-[11px] sm:pt-[16px] max-w-[256.953px] sm:max-w-[374px] text-white ff_k2d leading-[150%] opacity-[70%]" data-aos="zoom-in" data-aos-duration="1700"
-                >
-                  Our community is the heart and soul of SPRT. We're a diverse,
-                  passionate group of artists, technologists, and enthusiasts
-                  united by a common love for art, technology, and humor.
-                  Together, we collaborate, share ideas, and build a vibrant
-                  space where everyone's voice is heard and valued.
-                </p>
-              </div>
-            </div>
-            <div class="hidden" id="tab3Content">
-              <div
-                class="relative px-xl-0 px-[12px] sm:max-w-[409px] max-w-[335px] min-h-[277px] sm:min-h-[403px] flex tab_bg flex-col items-center rounded-[20px] pt-[39.43px] sm:pt-[55px] pb-[37px] border-[2px] border-[rgba(42,43,54)] mx-auto"
-              >
-                <img
-                  class="absolute bottom-0 w-[217.105px] h-[6.87px] xl:w-[316px] xl:h-[10px]"
-                  src="./assets/images/png/tabline.png"
-                  alt="tabline"
-                />
-                <img class="w-[54.963px] h-[54.963px] sm:w-[80px] sm:h-[80px]"data-aos="zoom-out" data-aos-duration="1500" src="./assets/images/svg/innovation.svg" alt="contemt1" />
-                <h4
-                  class="pt-[20px] text-white ff_oswald font-bold text-center text-[19.237px] sm:text-[28px] leading-[122%]" data-aos="zoom-in" data-aos-duration="1500"
-                >
-                  Innovation
-                </h4>
-                <p
-                  class="text-center text-[10.993px] sm:text-[16px] pt-[11px] sm:pt-[16px] max-w-[256.953px] sm:max-w-[366px] text-white ff_k2d leading-[150%] opacity-[70%]" data-aos="zoom-in" data-aos-duration="1900"
-                >
-                  At SPRT, innovation is our hallmark. We're pioneers in
-                  blending AI technology with artistic endeavors on the Solana
-                  blockchain. Our commitment to innovation drives us to
-                  constantly explore new possibilities, disrupting conventional
-                  norms to create something truly unique in the crypto art
-                  space.
-                </p>
-              </div>
-            </div>
-            <div class="hidden" id="tab4Content">
-              <div
-                class="relative px-xl-0 px-[12px] sm:max-w-[409px] max-w-[335px] min-h-[277px] sm:min-h-[403px] flex tab_bg flex-col items-center  rounded-[20px] pt-[39.43px] sm:pt-[55px] pb-[37px] border-[2px] border-[rgba(42,43,54)] mx-auto"
-              >
-                <img
-                  class="absolute bottom-0 w-[217.105px] h-[6.87px] xl:w-[316px] xl:h-[10px]"
-                  src="./assets/images/png/tabline.png"
-                  alt="tabline"
-                />
-                <img class="w-[54.963px] h-[54.963px] sm:w-[80px] sm:h-[80px]"data-aos="zoom-out" data-aos-duration="1500" src="./assets/images/svg/humor.svg" alt="contemt1" />
-                <h4
-                  class="pt-[20px] text-white ff_oswald font-bold text-center text-[19.237px] sm:text-[28px] leading-[122%]" data-aos="zoom-in" data-aos-duration="1500"
-                >
-                  Humor
-                </h4>
-                <p
-                  class="text-center text-[10.993px] sm:text-[16px] pt-[11px] sm:pt-[16px] max-w-[256.953px] sm:max-w-[375px] text-white ff_k2d leading-[150%] opacity-[70%]" data-aos="zoom-in" data-aos-duration="2100"
-                >
-                  Laughter is the essence of SPRT. Humor infuses life into our
-                  creations, making them not just visually appealing but also
-                  enjoyable. We believe in the power of humor to connect,
-                  resonate, and spread joy across our community and beyond.
-                </p>
-              </div>
-            </div>
-           <div class="flex items-center justify-center"> <button data-aos="zoom-in"
-              class="px-[20px] lg:hidden  py-3 text-white font-semibold text-base ff_k2d rounded-[129px] mt-[51px] hover:text-white duration-300 bg_nav_btn"
-            >
-              Read More
-            </button></div> 
-          </div>
-        </div>
-      </div>
-    </section>
-<!-- -------------------Art---------- -->
-    <section class="bg-black mt-[-1px]">
-      <div class="max-w-[1140px] mx-auto px-3">
-        <div class="flex items-center justify-center z-1 relative">
-          <button
-            class="rounded-[81px] border-[1px] text-[#01DFF7] py-3 px-4 ff_k2d font-semibold leading-[120%] border-[#29262d] bg-[#110e15] hover:text-white hover:bg-[#01DFF7] duration-300"
-          >
-            ArtShowcase
-          </button>
-        </div>
-
-        <div class="flex items-center justify-center text-center" id="gallery">
-          <h1
-            class="ff_oswald text-white mb-0 text-[28px] sm:text-[35px] md:text-[40px] lg:text-[48px] leading-[122%] font-bold mt-4 mb-4"
-          >
-            Our Gallery
-          </h1>
-        </div>
-        <p
-          class="opacity-70 ff_k2d text-white font-normal leading-[150%] text-center max-w-[558px] mx-auto"
-        >
-          Step into our digital haven, where creativity knows no bounds. Spark
-          your own creativity by seeing some of our AI creations.
+          class="w-12 xl:w-[100px] xl:h-[100px] h-12 rounded-full animate-spin border-x-8 border-solid border-purple-500 border-t-transparent"
+        ></div>
+        <p class="text-center text-white text-[40px] xl:pt-[20px]">
+          Loading...
         </p>
       </div>
-    </section>
-
-    <section id="mission" class="bg-black relative mt-[-1px]">
-      <div class="absolute md:bottom-[-3%] lg:bottom-[-9%]">
-        <img
-          class="max-w-full h-[177px] z-1"
-          src="./assets/images/webp/bottom_gradient.webp"
-          alt="bottom_gradient.webp"
-        />
-      </div>
-
-      <div class="absolute start-0 lg:top-[-20%] sm:top-[-10%] top-[-7%]">
-        <img
-          class="lg:max-w-[356px] md:max-w-[280px] sm:max-w-[220px] max-w-[150px]"
-          src="./assets/images/webp/ball_with_gradient.webp"
-          alt="radial_gradient_1.webp"
-        />
-      </div>
-
-      <div class="absolute end-0 top-[9%] sm:top-0">
-        <img
-          class="max-h-[343px] sm:max-w-[500px] md:max-h-[700px] lg:max-h-[1121px]"
-          src="./assets/images/webp/Ellipse _29.webp"
-          alt="Ellipse _29.webp"
-        />
-      </div>
-
-      <div
-        class="bg-[url('/assets/images/webp/bg_img.webp')] bg-no-repeat bg-center bg-cover"
+    </div>
+    <div class="overflow-x-hidden">
+      <header
+        id="header"
+        class="overflow-hidden z-30 bg-[url('/assets/images/webp/header_bg.webp')] bg-no-repeat bg-center bg-cover"
       >
-        <div
-          class="pt-[50px] sm:pt-20 md:pt-32 lg:pt-48 lg:pb-40 md:pb-32 sm:pb-20 pb-12"
+        <nav
+          class="relative z-[100] max-w-[1240px] mx-auto rounded-[129px] sm:mt-[20px] px-[20px] lg:px-[50px] bg_nav"
         >
-          <div class="max-w-[1140px] mx-auto px-3">
+          <div class="py-[15px] md:py-[10px] items-center flex justify-between">
             <div
-              class="flex items-center justify-center flex-col-reverse lg:flex-row flex-wrap my-2.5"
+              class="flex justify-between items-center w-full lg:w-auto relative z-20"
             >
-              <div class="lg:w-1/2 pt-8 lg:pt-0" data-aos="zoom-out-right" data-aos-duration="2100">
-                <img
-                  class="max-w-full w-[551px]"
-                  src="./assets/images/webp/redifined_sec_img.webp"
-                  alt=""
-                />
+              <img
+                class="cursor-pointer w-[42px] h-[42px] sm:w-[60px] sm:h-[60px]"
+                src="./assets/images/svg/navlogo.svg"
+                alt="logo"
+              />
+              <button
+                onclick="show()"
+                class="lg:hidden absolute end-0 text-black"
+              >
+                <img src="./assets/images/svg/nav_open.svg" alt="nav_open" />
+              </button>
+            </div>
+            <ul
+              class="lg:flex font-semibold flex gap-5 lg:gap-0 lg:flex-row bg-black lg:bg-transparent min-h-screen lg:min-h-fit justify-center lg:justify-end items-center w-full lg:relative z-20 fixed left-[-100%] lg:start-0 top-0 flex-col h-full ps-0 transition-all duration-300 ease-linear"
+              id="navMenu"
+            >
+              <li>
+                <a
+                  onclick="hide()"
+                  href="#home"
+                  class="ff_k2d text-[rgba(192,188,193)] leading-[150%] font-normal text-[16px] duration-300 hover:text-[#00E0F7]"
+                  >Home</a
+                >
+              </li>
+
+              <li class="lg:ps-[32px]">
+                <a
+                  onclick="hide()"
+                  href="#aboutus"
+                  class="ff_k2d text-[rgba(192,188,193)] leading-[150%] font-normal text-[16px] duration-300 hover:text-[#00E0F7]"
+                  >About Us</a
+                >
+              </li>
+              <li class="lg:ps-[32px]">
+                <a
+                  onclick="hide()"
+                  href="#mission"
+                  class="ff_k2d text-[rgba(192,188,193)] leading-[150%] font-normal text-[16px] duration-300 hover:text-[#00E0F7]"
+                  >Our Mission</a
+                >
+              </li>
+              <li class="lg:ps-[32px]">
+                <a
+                  onclick="hide()"
+                  href="#gallery"
+                  class="ff_k2d text-[rgba(192,188,193)] leading-[150%] font-normal text-[16px] duration-300 hover:text-[#00E0F7]"
+                  >Art Showcase</a
+                >
+              </li>
+              <li class="lg:ps-[32px]">
+                <a
+                  onclick="hide()"
+                  href="#community"
+                  class="ff_k2d text-[rgba(192,188,193)] leading-[150%] font-normal text-[16px] duration-300 hover:text-[#00E0F7]"
+                  >Community</a
+                >
+              </li>
+              <li class="lg:ps-[32px]">
+                <a
+                  onclick="hide()"
+                  href="#innovation"
+                  class="ff_k2d text-[rgba(192,188,193)] leading-[150%] font-normal text-[16px] duration-300 hover:text-[#00E0F7]"
+                  >Get Involved</a
+                >
+              </li>
+
+              <button
+                class="px-[20px] py-3 text-white font-semibold text-base ff_k2d rounded-[129px] xl:ms-[50px] lg:ms-4 hover:text-white duration-300 bg_nav_btn"
+              >
+                Contact Us
+              </button>
+              <button
+                onclick="hide()"
+                class="absolute lg:hidden top-[15px] right-[20px]"
+              >
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M25.9846 11.6665L20.0013 17.6498L14.018 11.6665L11.668 14.0165L17.6513 19.9998L11.668 25.9832L14.018 28.3332L20.0013 22.3498L25.9846 28.3332L28.3346 25.9832L22.3513 19.9998L28.3346 14.0165L25.9846 11.6665Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </ul>
+          </div>
+        </nav>
+        <main class="flex flex-col items-center lg:pt-[97px] relative">
+          <img
+            class="h-[409.593px] md:max-w-[154px] lg:max-w-[200px] z-[20] md:top-[35%] xl:max-w-[274px] xl:h-[631px] absolute xl:top-[4%] top-[45%] right-[-2%] xl:right-[5%] z-10"
+            src="./assets/images/webp/headerright.webp"
+            alt="headerright"
+          />
+          <img
+            class="xl:min-h-[539px] xl:max-w-[478px] lg:start-[-7%] absolute top-[20%] start-[-10%] header_left"
+            src="./assets/images/webp/headerleft.webp"
+            alt="headerleft"
+          />
+          <div
+            class="max-w-[1140px] mx-auto flex flex-col items-center ps-[22px] pe-[20px] relative z-20"
+          >
+            <p
+              class="text-center animate__flash leading-[120%] text-[#01DFF7] border-1 border border-[rgba(56,52,62)] font-semibold ff_k2d px-[20px] rounded-[81px] py-[12px] backdrop_blur_20px hover:bg-[#01DFF7] duration-300 hover:text-white mx-auto text-[16px] sm:text-[20px] mt-[48px] lg:mt-0 display:block"
+            >
+              Welcome to SPRT
+            </p>
+            <h1
+              class="ff_oswald font-bold text-white sm:text-[50px] text-[32px] md:text-[60px] lg:text-[75px] xl:text-[80px] leading-[120%] max-w-[258px] sm:max-w-[611px] text-center mt-[12px] sm:mt-[16px]"
+            >
+              Solanas Spirited <span class="text-[#01DFF7]"> AI Meme </span> Hub
+            </h1>
+            <p
+              class="sm:max-w-[593px] max-w-[335px] text-[rgba(190,193,192)] text-center ff_k2d mt-[8px] text-[16px]"
+            >
+              We are a vibrant AI hub within the Solana ecosystem, dedicated to
+              crafting meme-based art that transcends boundaries and sparks the
+              imagination. We represent the true Spirit of Solana - uniting in
+              our pursuit to be the best!
+            </p>
+            <button
+              class="px-[20px] py-3 text-white font-semibold text-base ff_k2d rounded-[129px] mt-[24px] sm:mt-[32px] mb-[91px] md:mb-[0px] hover:text-white duration-300 bg_nav_btn"
+            >
+              Join the Spirit
+            </button>
+          </div>
+          <span
+            class="w-full blacklayer h-[106px] mt-[200px] sm:mt-[91px] relative"
+          ></span>
+        </main>
+      </header>
+      <!-- -------------About us--------------- -->
+
+      <section
+        id="aboutus"
+        class="bg-[url('/assets/images/png/bg_about.png')] bg-no-repeat bg-center bg-cover relative"
+      >
+        <img
+          class="animate-pulse absolute top-[-10%] sm:hidden start-[0] z-[40]"
+          src="./assets/images/png/header_left_sm.png"
+          alt="ellipse"
+        />
+
+        <img
+          class="animate-pulse absolute sm:block hidden lg:top-[-20%] left-[0%] z-[49] z-[50] top-[-4%] w-[131px] h-[131px] lg:w-[587px] lg:h-[587px]"
+          src="./assets/images/webp/headerright_ellipse.webp"
+          alt="ELLIPSE"
+        />
+        <img
+          class="animate-pulse min-h-[131px] w-[131px] sm:w-[314px] sm:max-h-[314px] absolute lg:top-[-30%] top-[-10%] z-30 right-[0%]"
+          src="./assets/images/webp/headerleft_ellipse.webp"
+          alt="header_left"
+        />
+        <span
+          class="w-full blacklayer2 sm:h-[130px] h-[101px] mt-[17px] sm:mt-[17px] absolute top-[-3%]"
+        ></span>
+        <div
+          class="max-w-[1140px] mx-auto px-[12px] xl:pt-[176px] sm:pt-[106px] pt-[86px]"
+        >
+          <div
+            class="flex flex-wrap justify-center pb-[50px] lg:justify-between flex-row"
+          >
+            <div class="lg:w-7/12 md:w-10/12 sm:5/12 relative z-[50]">
+              <div class="flex justify-center lg:justify-start">
+                <button
+                  class="rounded-[81px] border-[1px] text-[#01DFF7] py-3 px-4 ff_k2d font-semibold leading-[120%] border-[#29262d] bg-[#110e15] hover:text-white hover:bg-[#01DFF7] duration-300"
+                  data-aos="fade-right"
+                  data-aos-duration="1500"
+                >
+                  About Us
+                </button>
               </div>
-              <div class="lg:w-1/2 lg:ps-4">
+              <h2
+                class="lg:text-start text-center ff_oswald leading-[122%] pt-[16px] md:text-[40px] sm:text-[36px] text-[28px] lg:text-[48px] text-white font-bold"
+                data-aos="fade-right"
+                data-aos-duration="1700"
+              >
+                SPRT is a community-driven movement.
+              </h2>
+              <p
+                class="lg:text-start text-center ff_k2d text-[16px] font-normal leading-[150%] text-[rgba(180,179,182)] pt-[16px] max-w-[335px] sm:max-w-[100%] mx-auto sm:mx-[0px] lg:max-w-[582px]"
+                data-aos="fade-right"
+                data-aos-duration="1900"
+              >
+                We're a collective of artists, creators, and Solana enthusiasts
+                passionate about pushing the boundaries of imagination and
+                possibilities through cartoon-based AI art on the Solana
+                blockchain.
+              </p>
+              <div
+                class="flex flex-wrap md:flex-row items-center justify-between sm:justify-center lg:justify-between xl:justify-start sm:mb-[30px] lg:mb-0 mb-[22px] pt-[30px] px-[8px] lg:px-[0px]"
+              >
                 <div
-                  class="flex items-center justify-center lg:justify-start z-1 relative"
+                  data-aos="zoom-in"
+                  data-aos-duration="2100"
+                  class="lg:w-3/12 xl:me-[50px] lg:me-[30px] w-6/12 flex lg:justify-start sm:justify-center justify-start"
+                  id="tab1"
+                  onClick="selectTab(1)"
                 >
                   <button
-                    class="rounded-[81px] border-[1px] text-[#01DFF7] py-3 px-4 ff_k2d font-semibold leading-[120%] border-[#29262d] bg-[#110e15] hover:text-white hover:bg-[#01DFF7] duration-300"
-                  data-aos="zoom-out-left" data-aos-duration="1500">
-                    Our Mission
+                    class="mt-[20px] lg:mt-[2px] text-white whitespace-nowrap ff_k2d font-bold tabbtn relative before:content-tabbutton before:bottom-[-30%] before:duration-300 before:transition-all before:opacity-0 active: before:absolute before:left-0"
+                  >
+                    Emphasize creativity
                   </button>
                 </div>
 
                 <div
-                  class="flex items-center justify-center lg:justify-start text-center lg:text-start"
-                >
-                  <h1 data-aos="zoom-out-left"
-                  data-aos-duration="1700"
-                    class="ff_oswald text-white mb-0 text-[28px] sm:text-[35px] md:text-[40px] lg:text-[48px] leading-[122%] font-bold mt-4 mb-4"
-                  >
-                    Redefining meme-based art on Solana
-                  </h1>
-                </div>
-
-                <p data-aos="zoom-out-left"
+                  data-aos="zoom-in"
                   data-aos-duration="1900"
-                  class="opacity-70 ff_k2d text-white font-normal leading-[150%] text-center lg:text-start"
+                  class="xl:pe-[47px] lg:w-2/12 w-3/12 sm:w-6/12 flex lg:justify-start sm:justify-center justify-start"
+                  id="tab2"
+                  onClick="selectTab(2)"
                 >
-                  Our mission at SPRT is clear - to redefine the norms of
-                  meme-based art on Solana. We strive to create a space where
-                  innovation, humor, and community collaboration thrive,
-                  offering a fresh perspective in the crypto art sphere.
-                </p>
-
-                <div class="pt-6 mt-1.5" data-aos="zoom-out-left"
-                  data-aos-duration="1700">
-                  <div
-                    class="border border-solid max-w-[558px] rounded-[6px] border-[#27222e] backdrop_blur_20px"
+                  <button
+                    class="mt-[20px] lg:mt-[2px] text-white ff_k2d font-bold tabbtn relative before:content-tabbutton before:bottom-[-30%] before:duration-300 before:transition-all before:opacity-0 active: before:absolute before:left-0"
                   >
-                    <div class="flex items-center gap-1.5 sm:gap-2.5 p-4">
-                      <img
-                        class="max-w-[29px] sm:max-w-[35px] md:max-w-[40px] lg:max-w-[50px]"
-                        src="./assets/images/webp/social-network.webp"
-                        alt="social-network.webp"
-                      />
-                      <p
-                        class="ff_k2d text-white text-[14px] sm:text-[16px] font-bold"
-                      >
-                        Innovative Solana's Meme Landscape
-                      </p>
-                    </div>
-                  </div>
+                    Community
+                  </button>
                 </div>
-
-                <div class="lg:pt-5 sm:pt-4 pt-3" data-aos="zoom-out-left"
-                  data-aos-duration="2100">
-                  <div
-                    class="border border-solid max-w-[558px] rounded-[6px] border-[#27222e] backdrop_blur_20px"
+                <div
+                  data-aos="zoom-in"
+                  data-aos-duration="1700"
+                  class="xl:pe-[37px] lg:w-2/12 w-6/12 flex lg:justify-start sm:justify-center justify-start"
+                  id="tab3"
+                  onClick="selectTab(3)"
+                >
+                  <button
+                    class="mt-[20px] lg:mt-[2px] text-white ff_k2d font-bold tabbtn relative before:content-tabbutton before:bottom-[-30%] before:duration-300 before:transition-all before:opacity-0 active: before:absolute before:left-0"
                   >
-                    <div class="flex items-center gap-1.5 sm:gap-2.5 p-4">
-                      <img
-                        class="max-w-[29px] sm:max-w-[35px] md:max-w-[40px] lg:max-w-[50px]"
-                        src="./assets/images/webp/AI_technology_img.webp"
-                        alt="social-network.webp"
-                      />
-                      <p
-                        class="ff_k2d text-white text-[14px] sm:text-[16px] font-bold"
-                      >
-                        Utilize Advances in AI Technology
-                      </p>
-                    </div>
-                  </div>
+                    Innovation
+                  </button>
                 </div>
-
-                <div data-aos="zoom-out-left"
-                  data-aos-duration="2300" class="lg:pt-5 sm:pt-4 pt-3">
-                  <div
-                    class="border border-solid max-w-[558px] rounded-[6px] border-[#27222e] backdrop_blur_20px"
+                <div
+                  data-aos="zoom-in"
+                  data-aos-duration="1500"
+                  class="xl:pe-[37px] lg:w-2/12 w-3/12 sm:w-6/12 flex lg:justify-start sm:justify-center"
+                  id="tab4"
+                  onClick="selectTab(4)"
+                >
+                  <button
+                    class="mt-[20px] lg:mt-[2px] text-white ff_k2d font-bold tabbtn relative before:content-tabbutton before:bottom-[-30%] before:duration-300 before:transition-all before:opacity-0 active: before:absolute before:left-0"
                   >
-                    <div class="flex items-center gap-1.5 sm:gap-2.5 p-4">
-                      <img
-                        class="max-w-[29px] sm:max-w-[35px] md:max-w-[40px] lg:max-w-[50px]"
-                        src="./assets/images/webp/Crypto_art_img.webp"
-                        alt="social-network.webp"
-                      />
-                      <p
-                        class="ff_k2d text-white text-[14px] sm:text-[16px] font-bold"
-                      >
-                        Fresh Perspective in Crypto Art
-                      </p>
-                    </div>
-                  </div>
+                    Humor
+                  </button>
                 </div>
+              </div>
+              <button
+                class="px-[20px] lg:block hidden py-3 text-white font-semibold text-base ff_k2d rounded-[129px] mt-[38px] hover:text-white duration-300 bg_nav_btn"
+              >
+                Read More
+              </button>
+              <!-- Tabs -->
+            </div>
+            <div
+              class="lg:w-4/12 xl:w-5/12 sm:w-6/12 w-full relative"
+              data-aos="zoom-out"
+              data-aos-duration="1500"
+            >
+              <img
+                class="absolute bottom-[10%] top-[50%] translate-y-[-30%] sm:top-[50%] sm:translate-y-[-50%]"
+                src="./assets/images/png/tab_elliose.png"
+                alt="tabellipse"
+              />
+              <div id="tab1Content">
+                <div
+                  class="relative px-xl-0 px-[12px] sm:max-w-[409px] max-w-[335px] min-h-[277px] sm:min-h-[403px] flex tab_bg flex-col items-center justify-center rounded-[20px] pt-[39.43px] sm:pt-[55px] pb-[37px] border-[2px] border-[rgba(42,43,54)] mx-auto"
+                >
+                  <img
+                    class="absolute bottom-0 w-[217.105px] h-[6.87px] xl:w-[316px] xl:h-[10px]"
+                    src="./assets/images/png/tabline.png"
+                    alt="tabline"
+                  />
+                  <img
+                    class="w-[54.963px] h-[54.963px] sm:w-[80px] sm:h-[80px]"
+                    data-aos="zoom-out"
+                    data-aos-duration="1500"
+                    src="./assets/images/svg/content1.svg"
+                    alt="contemt1"
+                  />
+                  <h4
+                    class="pt-[20px] text-white ff_oswald font-bold text-center text-[19.237px] sm:text-[28px] leading-[122%]"
+                    data-aos="zoom-in"
+                    data-aos-duration="1500"
+                  >
+                    Emphasize creativity
+                  </h4>
+                  <p
+                    class="text-center text-[10.993px] sm:text-[16px] pt-[11px] sm:pt-[16px] max-w-[256.953px] sm:max-w-[374px] text-white ff_k2d leading-[150%] opacity-[70%]"
+                  >
+                    SPRT thrives on boundless creativity. We encourage our
+                    community to unleash their imagination, pushing the
+                    boundaries of artistic expression. From futuristic cyberpunk
+                    designs to playful memes, every creation is an opportunity
+                    to explore new artistic horizons.
+                  </p>
+                </div>
+              </div>
+              <div class="hidden" id="tab2Content">
+                <div
+                  class="relative px-xl-0 px-[12px] sm:max-w-[409px] max-w-[335px] min-h-[277px] sm:min-h-[403px] flex tab_bg flex-col items-center rounded-[20px] pt-[39.43px] sm:pt-[55px] pb-[37px] border-[2px] border-[rgba(42,43,54)] mx-auto"
+                >
+                  <img
+                    class="absolute bottom-0 w-[217.105px] h-[6.87px] xl:w-[316px] xl:h-[10px]"
+                    src="./assets/images/png/tabline.png"
+                    alt="tabline"
+                  />
+                  <img
+                    class="w-[54.963px] h-[54.963px] sm:w-[80px] sm:h-[80px]"
+                    data-aos="zoom-out"
+                    data-aos-duration="1500"
+                    src="./assets/images/svg/community.svg"
+                    alt="contemt1"
+                  />
+                  <h4
+                    class="pt-[20px] text-white ff_oswald font-bold text-center text-[19.237px] sm:text-[28px] leading-[122%]"
+                    data-aos="zoom-in"
+                    data-aos-duration="1500"
+                  >
+                    Community
+                  </h4>
+                  <p
+                    class="text-center text-[10.993px] sm:text-[16px] pt-[11px] sm:pt-[16px] max-w-[256.953px] sm:max-w-[374px] text-white ff_k2d leading-[150%] opacity-[70%]"
+                  >
+                    Our community is the heart and soul of SPRT. We're a
+                    diverse, passionate group of artists, technologists, and
+                    enthusiasts united by a common love for art, technology, and
+                    humor. Together, we collaborate, share ideas, and build a
+                    vibrant space where everyone's voice is heard and valued.
+                  </p>
+                </div>
+              </div>
+              <div class="hidden" id="tab3Content">
+                <div
+                  class="relative px-xl-0 px-[12px] sm:max-w-[409px] max-w-[335px] min-h-[277px] sm:min-h-[403px] flex tab_bg flex-col items-center rounded-[20px] pt-[39.43px] sm:pt-[55px] pb-[37px] border-[2px] border-[rgba(42,43,54)] mx-auto"
+                >
+                  <img
+                    class="absolute bottom-0 w-[217.105px] h-[6.87px] xl:w-[316px] xl:h-[10px]"
+                    src="./assets/images/png/tabline.png"
+                    alt="tabline"
+                  />
+                  <img
+                    class="w-[54.963px] h-[54.963px] sm:w-[80px] sm:h-[80px]"
+                    data-aos="zoom-out"
+                    data-aos-duration="1500"
+                    src="./assets/images/svg/innovation.svg"
+                    alt="contemt1"
+                  />
+                  <h4
+                    class="pt-[20px] text-white ff_oswald font-bold text-center text-[19.237px] sm:text-[28px] leading-[122%]"
+                    data-aos="zoom-in"
+                    data-aos-duration="1500"
+                  >
+                    Innovation
+                  </h4>
+                  <p
+                    class="text-center text-[10.993px] sm:text-[16px] pt-[11px] sm:pt-[16px] max-w-[256.953px] sm:max-w-[366px] text-white ff_k2d leading-[150%] opacity-[70%]"
+                  >
+                    At SPRT, innovation is our hallmark. We're pioneers in
+                    blending AI technology with artistic endeavors on the Solana
+                    blockchain. Our commitment to innovation drives us to
+                    constantly explore new possibilities, disrupting
+                    conventional norms to create something truly unique in the
+                    crypto art space.
+                  </p>
+                </div>
+              </div>
+              <div class="hidden" id="tab4Content">
+                <div
+                  class="relative px-xl-0 px-[12px] sm:max-w-[409px] max-w-[335px] min-h-[277px] sm:min-h-[403px] flex tab_bg flex-col items-center rounded-[20px] pt-[39.43px] sm:pt-[55px] pb-[37px] border-[2px] border-[rgba(42,43,54)] mx-auto"
+                >
+                  <img
+                    class="absolute bottom-0 w-[217.105px] h-[6.87px] xl:w-[316px] xl:h-[10px]"
+                    src="./assets/images/png/tabline.png"
+                    alt="tabline"
+                  />
+                  <img
+                    class="w-[54.963px] h-[54.963px] sm:w-[80px] sm:h-[80px]"
+                    data-aos="zoom-out"
+                    data-aos-duration="1500"
+                    src="./assets/images/svg/humor.svg"
+                    alt="contemt1"
+                  />
+                  <h4
+                    class="pt-[20px] text-white ff_oswald font-bold text-center text-[19.237px] sm:text-[28px] leading-[122%]"
+                    data-aos="zoom-in"
+                    data-aos-duration="1500"
+                  >
+                    Humor
+                  </h4>
+                  <p
+                    class="text-center text-[10.993px] sm:text-[16px] pt-[11px] sm:pt-[16px] max-w-[256.953px] sm:max-w-[375px] text-white ff_k2d leading-[150%] opacity-[70%]"
+                  >
+                    Laughter is the essence of SPRT. Humor infuses life into our
+                    creations, making them not just visually appealing but also
+                    enjoyable. We believe in the power of humor to connect,
+                    resonate, and spread joy across our community and beyond.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center justify-center">
+                <button
+                  class="px-[20px] lg:hidden py-3 text-white font-semibold text-base ff_k2d rounded-[129px] mt-[51px] hover:text-white duration-300 bg_nav_btn"
+                >
+                  Read More
+                </button>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-black mt-[-1px] relative">
-      <img
-        class="absolute top-0 start-0 h-[1000px]"
-        src="./assets/images/webp/Ellipse_30.webp"
-        alt="Ellipse_30.webp"
-      />
-      <div class="prev1 absolute prev_arrow z-[8]">
-        <svg
-          width="44"
-          height="44"
-          viewBox="0 0 44 44"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle
-            cx="22"
-            cy="22"
-            r="21"
-            transform="matrix(-1 0 0 1 44 0)"
-            stroke="url(#paint0_radial_660_195)"
-            stroke-width="2"
-          />
-          <path
-            d="M26 13L17 22L26 31"
-            stroke="white"
-            stroke-width="3"
-            stroke-linecap="round"
-          />
-          <path
-            d="M26 13L17 22L26 31"
-            stroke="url(#paint1_radial_660_195)"
-            stroke-width="3"
-            stroke-linecap="round"
-          />
-          <defs>
-            <radialGradient
-              id="paint0_radial_660_195"
-              cx="0"
-              cy="0"
-              r="1"
-              gradientUnits="userSpaceOnUse"
-              gradientTransform="translate(41.1683 3.52) rotate(129.464) scale(52.4338 52.8595)"
-            >
-              <stop stop-color="#00E0F7" />
-              <stop offset="0.936458" stop-color="#8B00BD" />
-            </radialGradient>
-            <radialGradient
-              id="paint1_radial_660_195"
-              cx="0"
-              cy="0"
-              r="1"
-              gradientUnits="userSpaceOnUse"
-              gradientTransform="translate(17.5792 14.44) rotate(67.6259) scale(17.9082 12.9507)"
-            >
-              <stop stop-color="#00E0F7" />
-              <stop offset="0.936458" stop-color="#8B00BD" />
-            </radialGradient>
-          </defs>
-        </svg>
-      </div>
-
-      <div class="Next1 absolute next_arrow z-[8]">
-        <svg
-          width="44"
-          height="44"
-          viewBox="0 0 44 44"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="radial-gradient(120.14% 119.17% at 93.56% 8%, #00E0F7 0%, #8B00BD 93.65%), #D9D9D9;"
-        >
-          <circle
-            cx="22"
-            cy="22"
-            r="21"
-            transform="matrix(-1 0 0 1 44 0)"
-            stroke="url(#paint0_radial_173_761)"
-            stroke-width="2"
-          />
-          <path
-            d="M17 31L26 22L17 13"
-            stroke="white"
-            stroke-width="3"
-            stroke-linecap="round"
-          />
-          <path
-            d="M17 31L26 22L17 13"
-            stroke="url(#paint1_radial_173_761)"
-            stroke-width="3"
-            stroke-linecap="round"
-          />
-          <defs>
-            <radialGradient
-              id="paint0_radial_173_761"
-              cx="0"
-              cy="0"
-              r="1"
-              gradientUnits="userSpaceOnUse"
-              gradientTransform="translate(41.1683 3.52) rotate(129.464) scale(52.4338 52.8595)"
-            >
-              <stop stop-color="#00E0F7" />
-              <stop offset="0.936458" stop-color="#8B00BD" />
-            </radialGradient>
-            <radialGradient
-              id="paint1_radial_173_761"
-              cx="0"
-              cy="0"
-              r="1"
-              gradientUnits="userSpaceOnUse"
-              gradientTransform="translate(25.4208 29.56) rotate(-112.374) scale(17.9082 12.9507)"
-            >
-              <stop stop-color="#00E0F7" />
-              <stop offset="0.936458" stop-color="#8B00BD" />
-            </radialGradient>
-          </defs>
-        </svg>
-
-        <!-- <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="22" cy="22" r="22" fill="#D9D9D9" />
-                <circle cx="22" cy="22" r="22" fill="url(#paint0_radial_173_758)" />
-                <path d="M18 13L27 22L18 31" stroke="white" stroke-width="3" stroke-linecap="round" />
-                <defs>
-                    <radialGradient id="paint0_radial_173_758" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="translate(41.1683 3.52) rotate(129.464) scale(52.4338 52.8595)">
-                        <stop stop-color="#00E0F7" />
-                        <stop offset="0.936458" stop-color="#8B00BD" />
-                    </radialGradient>
-                </defs>
-            </svg> -->
-      </div>
-
-      <div class="max-w-[1140px] px-3 mx-auto pb-24 relative z-[5]"id="community">
-        <div class="flex items-center justify-center flex-col">
-          <button data-aos="zoom-out"
-                  data-aos-duration="2100"
-            class="rounded-[81px] border-[1px] text-[#01DFF7] py-3 px-4 ff_k2d font-semibold leading-[120%] border-[#29262d] bg-[#110e15] hover:text-white hover:bg-[#01DFF7] duration-300 relative z-1"
+          <div
+            id="gallery"
+            class="flex items-center justify-center z-1 relative pt-[35px] lg:pt-[86px] xl:pt-[145px]"
           >
-            Events
-          </button>
-
-          <h1 data-aos="zoom-out"
-                  data-aos-duration="2300"
-            class="ff_oswald text-white mb-0 text-[36px] sm:text-[40px] md:text-[44px] lg:text-[48px] leading-[122%] font-bold mt-4 mb-4"
-          >
-            Our community events
-          </h1>
-
-          <div class="max-w-[752px]">
-            <p data-aos="zoom-out"
-                  data-aos-duration="2700"
-              class="opacity-70 ff_k2d text-white font-normal leading-[150%] text-center"
-            >
-              Join us for activities that bring our community together. From
-              meme competitions that challenge your wit to engaging Ask Me
-              Anything sessions, our goal is to be inclusive, and exciting for
-              everyone.
-            </p>
-          </div>
-        </div>
-
-        <div class="mt-10"data-aos="zoom-out"
-                  data-aos-duration="2500">
-          <div class="flex items-center justify-between center_slider">
-            <div class="w-1/3">
-              <div
-                class="border-2 border-[#413547] max-w-[364px] min-h-[473px] rounded-[12px] relative"
-              >
-                <div class="flex items-center justify-center">
-                  <img
-                    class="absolute bottom-0"
-                    src="./assets/images/webp/Card_bottom_img.webp"
-                    alt="Card_bottom_img.webp"
-                  />
-                </div>
-
-                <img
-                  class="absolute bottom-0"
-                  src="./assets/images/webp/Card_Ellipse.webp"
-                  alt="Card_Ellipse"
-                />
-
-                <div class="relative z-1">
-                  <div class="relative">
-                    <img
-                      class="mx-auto p-4"
-                      src="./assets/images/webp/slider_img_1.webp"
-                      alt="slider_img_1.webp"
-                    />
-                    <div class="absolute start-[4.5%] top-[10%]">
-                      <div
-                        class="backdrop_blur_20px py-1 px-2.5 rounded-r-[50px]"
-                      >
-                        <p
-                          class="ff_k2d text-[14px] font-normal leading-[150%] text-white"
-                        >
-                          27Jan 2024
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <h1 class="ff_oswald text-[20px] font-normal text-white px-4">
-                    Meme Competitions
-                  </h1>
-                  <p
-                    class="ff_k2d text-white font-normal leading-[150%] opacity-70 text-[16px] px-4 pt-1"
-                  >
-                    Get creative and win prizes for the most witty, relevant and
-                    engaging memes on Solana.
-                  </p>
-
-                  <div class="flex items-center gap-5 px-4 py-4">
-                    <a href="https://www.instagram.com/"
-                      ><img
-                        class="max-w-[32px]"
-                        src="./assets/images/webp/instagram.webp"
-                        alt="instagram"
-                    /></a>
-                    <a href="https://twitter.com/"
-                      ><img
-                        class="max-w-[32px]"
-                        src="./assets/images/webp/twitter.webp"
-                        alt="twitter"
-                    /></a>
-                  </div>
-
-                  <div class="flex items-center justify-between px-4">
-                    <p
-                      class="ff_k2d text-white font-normal leading-[150%] opacity-70 text-[16px] pt-1"
-                    >
-                      Scan our QR code join now
-                    </p>
-                    <a href="#"
-                      ><img
-                        class="max-w-[44px]"
-                        src="./assets/images/webp/QR_code.webp"
-                        alt="QR_code.webp"
-                    /></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="w-1/3">
-              <div
-                class="border-2 border-[#413547] max-w-[364px] min-h-[473px] rounded-[12px] relative"
-              >
-                <div class="flex items-center justify-center">
-                  <img
-                    class="absolute bottom-0"
-                    src="./assets/images/webp/Card_bottom_img.webp"
-                    alt="Card_bottom_img.webp"
-                  />
-                </div>
-
-                <img
-                  class="absolute bottom-0"
-                  src="./assets/images/webp/Card_Ellipse.webp"
-                  alt="Card_Ellipse"
-                />
-
-                <div class="relative z-1">
-                  <div class="relative">
-                    <img
-                      class="mx-auto p-4"
-                      src="./assets/images/webp/slider_img_2.webp"
-                      alt="slider_img_1.webp"
-                    />
-                    <div class="absolute start-[4.5%] top-[10%]">
-                      <div
-                        class="backdrop_blur_20px py-1 px-2.5 rounded-r-[50px]"
-                      >
-                        <p
-                          class="ff_k2d text-[14px] font-normal leading-[150%] text-white"
-                        >
-                          27Jan 2024
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <h1 class="ff_oswald text-[20px] font-normal text-white px-4">
-                    AMA’s
-                  </h1>
-                  <p
-                    class="ff_k2d text-white font-normal leading-[150%] opacity-70 text-[16px] px-4 pt-1"
-                  >
-                    Ask the questions that are on your mind, and engage in fun
-                    conversations with the creators.
-                  </p>
-
-                  <div class="flex items-center gap-5 px-4 py-4">
-                    <a href="https://www.instagram.com/"
-                      ><img
-                        class="max-w-[32px]"
-                        src="./assets/images/webp/instagram.webp"
-                        alt="instagram"
-                    /></a>
-                    <a href="https://twitter.com/"
-                      ><img
-                        class="max-w-[32px]"
-                        src="./assets/images/webp/twitter.webp"
-                        alt="twitter"
-                    /></a>
-                  </div>
-
-                  <div class="flex items-center justify-between px-4">
-                    <p
-                      class="ff_k2d text-white font-normal leading-[150%] opacity-70 text-[16px] pt-1"
-                    >
-                      Scan our QR code join now
-                    </p>
-                    <a href="#"
-                      ><img
-                        class="max-w-[44px]"
-                        src="./assets/images/webp/QR_code.webp"
-                        alt="QR_code.webp"
-                    /></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="w-1/3">
-              <div
-                class="border-2 border-[#413547] max-w-[364px] min-h-[473px] rounded-[12px] relative"
-              >
-                <div class="flex items-center justify-center">
-                  <img
-                    class="absolute bottom-0"
-                    src="./assets/images/webp/Card_bottom_img.webp"
-                    alt="Card_bottom_img.webp"
-                  />
-                </div>
-
-                <img
-                  class="absolute bottom-0"
-                  src="./assets/images/webp/Card_Ellipse.webp"
-                  alt="Card_Ellipse"
-                />
-
-                <div class="relative z-1">
-                  <div class="relative">
-                    <img
-                      class="mx-auto p-4"
-                      src="./assets/images/webp/slider_img_3.webp"
-                      alt="slider_img_3.webp"
-                    />
-                    <div class="absolute start-[4.5%] top-[10%]">
-                      <div
-                        class="backdrop_blur_20px py-1 px-2.5 rounded-r-[50px]"
-                      >
-                        <p
-                          class="ff_k2d text-[14px] font-normal leading-[150%] text-white"
-                        >
-                          27Jan 2024
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <h1 class="ff_oswald text-[20px] font-normal text-white px-4">
-                    AI video competitions
-                  </h1>
-                  <p
-                    class="ff_k2d text-white font-normal leading-[150%] opacity-70 text-[16px] px-4 pt-1"
-                  >
-                    Utilize cutting edge technology to craft amazing AI videos
-                    and share them with the community for a chance to win
-                    prizes.
-                  </p>
-
-                  <div class="flex items-center gap-5 px-4 py-4">
-                    <a href="https://www.instagram.com/"
-                      ><img
-                        class="max-w-[32px]"
-                        src="./assets/images/webp/instagram.webp"
-                        alt="instagram"
-                    /></a>
-                    <a href="https://twitter.com/"
-                      ><img
-                        class="max-w-[32px]"
-                        src="./assets/images/webp/twitter.webp"
-                        alt="twitter"
-                    /></a>
-                  </div>
-
-                  <div class="flex items-center justify-between px-4">
-                    <p
-                      class="ff_k2d text-white font-normal leading-[150%] opacity-70 text-[16px] pt-1"
-                    >
-                      Scan our QR code join now
-                    </p>
-                    <a href="#"
-                      ><img
-                        class="max-w-[44px]"
-                        src="./assets/images/webp/QR_code.webp"
-                        alt="QR_code.webp"
-                    /></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="w-1/3">
-              <div
-                class="border-2 border-[#413547] max-w-[364px] min-h-[473px] rounded-[12px] relative"
-              >
-                <div class="flex items-center justify-center">
-                  <img
-                    class="absolute bottom-0"
-                    src="./assets/images/webp/Card_bottom_img.webp"
-                    alt="Card_bottom_img.webp"
-                  />
-                </div>
-
-                <img
-                  class="absolute bottom-0"
-                  src="./assets/images/webp/Card_Ellipse.webp"
-                  alt="Card_Ellipse"
-                />
-
-                <div class="relative z-1">
-                  <div class="relative">
-                    <img
-                      class="mx-auto p-4"
-                      src="./assets/images/webp/slider_img_1.webp"
-                      alt="slider_img_1.webp"
-                    />
-                    <div class="absolute start-[4.5%] top-[10%]">
-                      <div
-                        class="backdrop_blur_20px py-1 px-2.5 rounded-r-[50px]"
-                      >
-                        <p
-                          class="ff_k2d text-[14px] font-normal leading-[150%] text-white"
-                        >
-                          27Jan 2024
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <h1 class="ff_oswald text-[20px] font-normal text-white px-4">
-                    Meme Competitions
-                  </h1>
-                  <p
-                    class="ff_k2d text-white font-normal leading-[150%] opacity-70 text-[16px] px-4 pt-1"
-                  >
-                    Get creative and win prizes for the most witty, relevant and
-                    engaging memes on Solana.
-                  </p>
-
-                  <div class="flex items-center gap-5 px-4 py-4">
-                    <a href="https://www.instagram.com/"
-                      ><img
-                        class="max-w-[32px]"
-                        src="./assets/images/webp/instagram.webp"
-                        alt="instagram"
-                    /></a>
-                    <a href="https://twitter.com/"
-                      ><img
-                        class="max-w-[32px]"
-                        src="./assets/images/webp/twitter.webp"
-                        alt="twitter"
-                    /></a>
-                  </div>
-
-                  <div class="flex items-center justify-between px-4">
-                    <p
-                      class="ff_k2d text-white font-normal leading-[150%] opacity-70 text-[16px] pt-1"
-                    >
-                      Scan our QR code join now
-                    </p>
-                    <a href="#"
-                      ><img
-                        class="max-w-[44px]"
-                        src="./assets/images/webp/QR_code.webp"
-                        alt="QR_code.webp"
-                    /></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-28 sm:mt-14 flex items-center justify-center"data-aos="zoom-in"
-                  data-aos-duration="2300">
             <button
-              class="px-5 py-3 rounded-[110px] ff_k2d text-white font-[16px] font-semibold leading-normal bg_nav_btn"
+              class="rounded-[81px] border-[1px] text-[#01DFF7] py-3 px-4 ff_k2d font-semibold leading-[120%] border-[#29262d] bg-[#110e15] hover:text-white hover:bg-[#01DFF7] duration-300"
+            >
+              ArtShowcase
+            </button>
+          </div>
+
+          <div class="flex items-center justify-center text-center">
+            <h1
+              class="ff_oswald text-white mb-0 text-[28px] sm:text-[35px] md:text-[40px] lg:text-[48px] leading-[122%] font-bold mt-4 mb-4"
+            >
+              Our Gallery
+            </h1>
+          </div>
+          <p
+            class="opacity-70 relative z-[40] ff_k2d text-white font-normal leading-[150%] text-center max-w-[558px] mx-auto"
+          >
+            Step into our digital haven, where creativity knows no bounds. Spark
+            your own creativity by seeing some of our AI creations.
+          </p>
+        </div>
+      </section>
+
+      <section class="mt-[-1px] bg-black relative">
+        <img
+          class="animate-pulse absolute start-0 z-[100] top-[-30%] h-[124px] sm:h-[732px] z-[40]"
+          src="./assets/images/png/gallery_right.png"
+          alt="vec"
+        />
+        <img
+          class="animate-pulse absolute end-0 sm:h-[732px] top-[-15%] z-[2] h-[124px]"
+          src="./assets/images/png/galleryleft.png"
+          alt="vec"
+        />
+        <img
+          class="w-100 absolute top-[-3%] sm:top-[-8%] sm:h-[150px] h-[102px]"
+          src="./assets/images/webp/top_layer_gallery.webp"
+          alt="blacklayer"
+        />
+        <div class="max-w-[1140px] mx-auto px-5 sm:px-3 relative z-[100]">
+          <div class="py-10">
+            <div class="md:flex items-center justify-center gap-6">
+              <div class="sm:flex gap-6">
+                <div class="flex flex-col gap-6">
+                  <div
+                    class="border-2 border-[#201f21] max-w-[364px] rounded-[12px] overflow-hidden mx-auto relative"
+                  >
+                    <img
+                      class="absolute bottom-0"
+                      src="./assets/images/webp/grid_gradient_1.webp"
+                      alt="grid_gradient_1.webp"
+                    />
+                    <img
+                      class="p-4 z-[1] relative"
+                      src="./assets/images/webp/grid_img_1.webp"
+                      alt="grid_img_1.webp"
+                    />
+                  </div>
+                  <div
+                    class="border-2 border-[#201f21] max-w-[364px] rounded-[12px] overflow-hidden mx-auto relative"
+                  >
+                    <img
+                      class="absolute bottom-0"
+                      src="./assets/images/webp/grid_gradient_2.webp"
+                      alt="grid_gradient_1.webp"
+                    />
+                    <img
+                      class="p-4 z-[1] relative"
+                      src="./assets/images/webp/grid_img_2.webp"
+                      alt="grid_img_1.webp"
+                    />
+                  </div>
+                </div>
+
+                <div class="flex flex-col gap-6">
+                  <div
+                    class="border-2 border-[#201f21] max-w-[364px] rounded-[12px] overflow-hidden mx-auto mt-6 sm:mt-0 relative"
+                  >
+                    <img
+                      class="absolute bottom-0"
+                      src="./assets/images/webp/grid_gradient_2.webp"
+                      alt="grid_gradient_1.webp"
+                    />
+                    <img
+                      class="p-4 z-[1] relative"
+                      src="./assets/images/webp/grid_img_3.webp"
+                      alt="grid_img_1.webp"
+                    />
+                  </div>
+                  <div
+                    class="border-2 border-[#201f21] max-w-[364px] rounded-[12px] overflow-hidden mx-auto relative"
+                  >
+                    <img
+                      class="absolute bottom-0"
+                      src="./assets/images/webp/grid_gradient_2.webp"
+                      alt="grid_gradient_1.webp"
+                    />
+                    <img
+                      class="p-4 z-[1] relative"
+                      src="./assets/images/webp/grid_img_4.webp"
+                      alt="grid_img_1.webp"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="sm:flex items-start md:flex-col mt-6 md:mt-0 gap-6">
+                <div
+                  class="border-2 border-[#201f21] max-w-[364px] rounded-[12px] overflow-hidden mx-auto relative"
+                >
+                  <img
+                    class="absolute bottom-0"
+                    src="./assets/images/webp/grid_gradient_1.webp"
+                    alt="grid_gradient_1.webp"
+                  />
+                  <img
+                    class="p-4 z-[1] relative"
+                    src="./assets/images/webp/grid_img_5.webp"
+                    alt="grid_img_1.webp"
+                  />
+                </div>
+                <div
+                  class="border-2 border-[#201f21] max-w-[364px] rounded-[12px] overflow-hidden mt-6 sm:mt-0 mx-auto relative"
+                >
+                  <img
+                    class="absolute bottom-0"
+                    src="./assets/images/webp/grid_gradient_2.webp"
+                    alt="grid_gradient_1.webp"
+                  />
+                  <img
+                    class="p-4 z-[1] relative"
+                    src="./assets/images/webp/grid_img_6.webp"
+                    alt="grid_img_1.webp"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex items-center relative justify-center pb-10"
+          >
+            <button
+              class="px-5 py-3 relative z-[100] rounded-[110px] ff_k2d text-white font-[16px] font-semibold leading-normal bg_nav_btn mt-2.5"
             >
               Join the Spirit
             </button>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <!-- -------------------Art---------- -->
 
-    <section class="bg-black mt-[-1px] relative z-[1]">
-      <img
-        class="absolute bottom-[-10%] z-[-1]"
-        src="./assets/images/webp/footer_top_gradient.png"
-        alt="footer_top_gradient.png"
-      />
-      <img
-        class="absolute top-[-12%] sm:top-0 md:bottom-0 max-h-[400px] sm:max-w-[550px] md:max-h-[600px] lg:max-h-[850px]"
-        src="./assets/images/webp/Ellipse_36.webp"
-        alt="Ellipse_36.webp"
-      />
-
-      <img
-        class="absolute end-0 top-[-22%] sm:top-[-30%] lg:top-[-50%] h-[350px] sm:h-[500px] lg:h-[569px] z-[-1]"
-        src="./assets/images/webp/right_side_ball.webp"
-        alt="right_side_ball.webp"
-      />
-
-      <div class="max-w-[1140px] mx-auto px-5 sm:px-3 sm:pt-0 pt-12">
-        <div class="flex items-center justify-center z-1 relative">
-          <button data-aos="zoom-in"
-                  data-aos-duration="2300"
-            class="rounded-[81px] border-[1px] text-[#01DFF7] py-3 px-4 ff_k2d font-semibold leading-[120%] border-[#29262d] bg-[#110e15] hover:text-white hover:bg-[#01DFF7] duration-300"
-          >
-            Tokenomics
-          </button>
-        </div>
-
-        <div class="flex items-center justify-center text-center">
-          <h1 data-aos="zoom-in"
-                  data-aos-duration="2300"
-            class="ff_oswald text-white mb-0 text-[28px] sm:text-[35px] md:text-[40px] lg:text-[48px] leading-[122%] font-bold mt-2.5 mb-2.5 sm:mt-4 sm:mb-4"
-          >
-            Our Tokenomics
-          </h1>
-        </div>
-
-        <div class="flex items-center justify-center">
-          <p data-aos="zoom-in"
-                  data-aos-duration="2300"
-            class="opacity-70 ff_k2d text-white font-normal leading-[150%] text-center max-w-[691px]"
-          >
-            SPRT is proudly 100% community-owned - there are no pre-sales. We
-            have zero expectations, no utility and no possibility to be anything
-            more than complete meme speculation.
-          </p>
-        </div>
-
-        <div 
-          class="flex items-center justify-center flex-wrap mt-8 sm:mt-14 md:mt-[77px] gap-11 sm:gap-14 z-[1]"
-        >
-          <img 
-            class="sm:block hidden sm:!max-w-[480px] sm:!min-h-[300px]"
-            src="./assets/images/webp/Tokenomics_circle.webp"
-            alt="Tokenomics_circle.webp"
-          />
+      <section id="mission" class="bg-black relative mt-[-1px] relative z-20">
+        <div class="absolute md:bottom-[-3%] lg:bottom-[-9%]">
           <img
-            class="block sm:hidden max-w-[283px] min-h-[263px]"
-            src="./assets/images/webp/tokenomics_circle_2.webp"
-            alt="Tokenomics_circle.webp"
+            class="max-w-full h-[177px] z-1"
+            src="./assets/images/webp/bottom_gradient.webp"
+            alt="bottom_gradient.webp"
           />
+        </div>
 
-          <div data-aos="fade-left"
-     data-aos-anchor="#example-anchor"
-     data-aos-offset="500"
-     data-aos-duration="500"
-            class="border-2 rounded-[12px] py-7 px-3 border-[#1f1f1f] w-[262px] min-h-[209px] bg-[#060606] max-w-full relative z-[1]"
+        <div
+          class="absolute z-[30] start-0 lg:top-[-20%] sm:top-[-10%] top-[-7%]"
+        >
+          <img
+            class="animate-pulse lg:max-w-[356px] md:max-w-[280px] sm:max-w-[220px] max-w-[150px]"
+            src="./assets/images/webp/ball_with_gradient.webp"
+            alt="radial_gradient_1.webp"
+          />
+        </div>
+
+        <div class="absolute end-0 top-[9%] sm:top-0">
+          <img
+            class="animate-pulse max-h-[343px] sm:max-w-[500px] md:max-h-[700px] lg:max-h-[1121px]"
+            src="./assets/images/webp/Ellipse _29.webp"
+            alt="Ellipse _29.webp"
+          />
+        </div>
+
+        <div
+          class="bg-[url('/assets/images/webp/bg_img.webp')] bg-no-repeat bg-center bg-cover"
+        >
+          <div
+            class="pt-[50px] z-10 relative sm:pt-20 md:pt-32 lg:pt-[126px] lg:pb-40 md:pb-32 sm:pb-20 pb-12"
           >
             <img
-              class="hidden sm:block absolute start-[-25%] top-[-25%] z-[-1]"
-              src="./assets/images/webp/Ellipse_21.webp"
-              alt="Ellipse_21.webp"
+              class="w-full md:h-[164px] min-h-[58px] absolute top-[-10%] z-0"
+              src="./assets/images/webp/top_gradient.webp"
+              alt="layer"
             />
-            <div class="flex items-center justify-center">
-              <img
-                class="absolute bottom-0"
-                src="./assets/images/webp/tokenomics_card_img.webp"
-                alt="tokenomics_card_img.webp"
-              />
+            <div class="max-w-[1140px] mx-auto px-3">
+              <div
+                class="flex items-center justify-center flex-col-reverse lg:flex-row flex-wrap my-2.5"
+              >
+                <div
+                  class="lg:w-1/2 pt-8 lg:pt-0"
+                  data-aos="zoom-out-right"
+                  data-aos-duration="2100"
+                >
+                  <img
+                    class="max-w-full w-[551px]"
+                    src="./assets/images/webp/redifined_sec_img.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="lg:w-1/2 lg:ps-4">
+                  <div
+                    data-aos="zoom-out-left"
+                    data-aos-duration="1500"
+                    class="flex items-center justify-center lg:justify-start z-1 relative"
+                  >
+                    <button
+                      class="rounded-[81px] border-[1px] text-[#01DFF7] py-3 px-4 ff_k2d font-semibold leading-[120%] border-[#29262d] bg-[#110e15] hover:text-white hover:bg-[#01DFF7] duration-300"
+                    >
+                      Our Mission
+                    </button>
+                  </div>
+
+                  <div
+                    class="flex items-center justify-center lg:justify-start text-center lg:text-start"
+                  >
+                    <h1
+                      data-aos="zoom-out-left"
+                      data-aos-duration="1700"
+                      class="ff_oswald text-white mb-0 text-[28px] sm:text-[35px] md:text-[40px] lg:text-[48px] leading-[122%] font-bold mt-4 mb-4"
+                    >
+                      Redefining meme-based art on Solana
+                    </h1>
+                  </div>
+
+                  <p
+                    data-aos="zoom-out-left"
+                    data-aos-duration="1900"
+                    class="opacity-70 ff_k2d text-white font-normal leading-[150%] text-center lg:text-start"
+                  >
+                    Our mission at SPRT is clear - to redefine the norms of
+                    meme-based art on Solana. We strive to create a space where
+                    innovation, humor, and community collaboration thrive,
+                    offering a fresh perspective in the crypto art sphere.
+                  </p>
+
+                  <div
+                    class="pt-6 mt-1.5"
+                    data-aos="zoom-out-left"
+                    data-aos-duration="1700"
+                  >
+                    <div
+                      class="border border-solid max-w-[558px] rounded-[6px] border-[#27222e] backdrop_blur_20px"
+                    >
+                      <div class="flex items-center gap-1.5 sm:gap-2.5 p-4">
+                        <img
+                          class="max-w-[29px] sm:max-w-[35px] md:max-w-[40px] lg:max-w-[50px]"
+                          src="./assets/images/webp/social-network.webp"
+                          alt="social-network.webp"
+                        />
+                        <p
+                          class="ff_k2d text-white text-[14px] sm:text-[16px] font-bold"
+                        >
+                          Innovative Solana's Meme Landscape
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="lg:pt-5 sm:pt-4 pt-3"
+                    data-aos="zoom-out-left"
+                    data-aos-duration="2100"
+                  >
+                    <div
+                      class="border border-solid max-w-[558px] rounded-[6px] border-[#27222e] backdrop_blur_20px"
+                    >
+                      <div class="flex items-center gap-1.5 sm:gap-2.5 p-4">
+                        <img
+                          class="max-w-[29px] sm:max-w-[35px] md:max-w-[40px] lg:max-w-[50px]"
+                          src="./assets/images/webp/AI_technology_img.webp"
+                          alt="social-network.webp"
+                        />
+                        <p
+                          class="ff_k2d text-white text-[14px] sm:text-[16px] font-bold"
+                        >
+                          Utilize Advances in AI Technology
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    data-aos="zoom-out-left"
+                    data-aos-duration="2300"
+                    class="lg:pt-5 sm:pt-4 pt-3"
+                  >
+                    <div
+                      class="border border-solid max-w-[558px] rounded-[6px] border-[#27222e] backdrop_blur_20px"
+                    >
+                      <div class="flex items-center gap-1.5 sm:gap-2.5 p-4">
+                        <img
+                          class="max-w-[29px] sm:max-w-[35px] md:max-w-[40px] lg:max-w-[50px]"
+                          src="./assets/images/webp/Crypto_art_img.webp"
+                          alt="social-network.webp"
+                        />
+                        <p
+                          class="ff_k2d text-white text-[14px] sm:text-[16px] font-bold"
+                        >
+                          Fresh Perspective in Crypto Art
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <h1
-              class="text-[#15BFEF] ff_oswald text-[28px] font-semibold leading-[150%] text-center"
-            >
-              100%
-            </h1>
-            <p
-              class="ff_k2d font-normal text-[16px] leading-[150%] text-center text-white pt-3"
-            >
-              Community owned
-              <span class="block"> 0/0 TAX</span>
-            </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <footer class="bg-black mt-[-1px] relative">
-      <img
-        class="absolute top-[-20%] h-[428px]"
-        src="./assets/images/webp/Ellipse_37.webp"
-        alt="Ellipse_37.webp"
-      />
-      <img
-        class="absolute top-0 left-0 max-w-full h-[160px]"
-        src="./assets/images/webp/top_gradient.webp"
-        alt=""
-      />
-      <div
-        class="bg-[url('/assets/images/webp/footer_bg.webp')] bg-no-repeat bg-center bg-cover relative"
-      >
-        <div class="max-w-[1140px] mx-auto px-3">
-          <div class="pt-24 sm:pt-12">
-            <img
-              class="max-w-[116px] mx-auto mt-11 sm:mt-12"
-              src="./assets/images/webp/LOGO_SPRT.webp"
-              alt="LOGO_SPRT.webp"
+      <section class="bg-black mt-[-1px] relative">
+        <img
+          class="animate-pulse absolute top-0 start-0 h-[1000px]"
+          src="./assets/images/webp/Ellipse_30.webp"
+          alt="Ellipse_30.webp"
+        />
+        <div class="prev1 absolute prev_arrow z-[8] cursor-pointer">
+          <svg
+            width="44"
+            height="44"
+            viewBox="0 0 44 44"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="22"
+              cy="22"
+              r="21"
+              transform="matrix(-1 0 0 1 44 0)"
+              stroke="url(#paint0_radial_660_195)"
+              stroke-width="2"
             />
-            <p
-              class="ff_k2d text-white text-[16px] leading-[20.8px] opacity-70 mt-4 mb-6 text-center"
+            <path
+              d="M26 13L17 22L26 31"
+              stroke="white"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+            <path
+              d="M26 13L17 22L26 31"
+              stroke="url(#paint1_radial_660_195)"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+            <defs>
+              <radialGradient
+                id="paint0_radial_660_195"
+                cx="0"
+                cy="0"
+                r="1"
+                gradientUnits="userSpaceOnUse"
+                gradientTransform="translate(41.1683 3.52) rotate(129.464) scale(52.4338 52.8595)"
+              >
+                <stop stop-color="#00E0F7" />
+                <stop offset="0.936458" stop-color="#8B00BD" />
+              </radialGradient>
+              <radialGradient
+                id="paint1_radial_660_195"
+                cx="0"
+                cy="0"
+                r="1"
+                gradientUnits="userSpaceOnUse"
+                gradientTransform="translate(17.5792 14.44) rotate(67.6259) scale(17.9082 12.9507)"
+              >
+                <stop stop-color="#00E0F7" />
+                <stop offset="0.936458" stop-color="#8B00BD" />
+              </radialGradient>
+            </defs>
+          </svg>
+        </div>
+
+        <div class="Next1 absolute next_arrow z-[8] cursor-pointer">
+          <svg
+            width="44"
+            height="44"
+            viewBox="0 0 44 44"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="radial-gradient(120.14% 119.17% at 93.56% 8%, #00E0F7 0%, #8B00BD 93.65%), #D9D9D9;"
+          >
+            <circle
+              cx="22"
+              cy="22"
+              r="21"
+              transform="matrix(-1 0 0 1 44 0)"
+              stroke="url(#paint0_radial_173_761)"
+              stroke-width="2"
+            />
+            <path
+              d="M17 31L26 22L17 13"
+              stroke="white"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+            <path
+              d="M17 31L26 22L17 13"
+              stroke="url(#paint1_radial_173_761)"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+            <defs>
+              <radialGradient
+                id="paint0_radial_173_761"
+                cx="0"
+                cy="0"
+                r="1"
+                gradientUnits="userSpaceOnUse"
+                gradientTransform="translate(41.1683 3.52) rotate(129.464) scale(52.4338 52.8595)"
+              >
+                <stop stop-color="#00E0F7" />
+                <stop offset="0.936458" stop-color="#8B00BD" />
+              </radialGradient>
+              <radialGradient
+                id="paint1_radial_173_761"
+                cx="0"
+                cy="0"
+                r="1"
+                gradientUnits="userSpaceOnUse"
+                gradientTransform="translate(25.4208 29.56) rotate(-112.374) scale(17.9082 12.9507)"
+              >
+                <stop stop-color="#00E0F7" />
+                <stop offset="0.936458" stop-color="#8B00BD" />
+              </radialGradient>
+            </defs>
+          </svg>
+        </div>
+
+        <div
+          class="max-w-[1140px] px-5 sm:px-3 mx-auto pb-24 relative z-[50]"
+          id="community"
+        >
+          <div data-aos-duration="2100" class="flex  items-center justify-center flex-col">
+            <button
+             
+              class="rounded-[81px] border-[1px] text-[#01DFF7] py-3 px-4 ff_k2d font-semibold leading-[120%] border-[#29262d] bg-[#110e15] hover:text-white hover:bg-[#01DFF7] duration-300 relative z-1"
             >
-              The true Spirit of Solana
-            </p>
+              Events
+            </button>
+
+            <h1
+              data-aos="zoom-out"
+              data-aos-duration="2300"
+              class="ff_oswald text-white mb-0 text-[36px] sm:text-[40px] md:text-[44px] lg:text-[48px] leading-[122%] font-bold mt-4 mb-4"
+            >
+              Our community events
+            </h1>
+
+            <div class="max-w-[752px]">
+              <p
+                data-aos="zoom-out"
+                data-aos-duration="2700"
+                class="opacity-70 ff_k2d text-white font-normal leading-[150%] text-center"
+              >
+                Join us for activities that bring our community together. From
+                meme competitions that challenge your wit to engaging Ask Me
+                Anything sessions, our goal is to be inclusive, and exciting for
+                everyone.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-10" data-aos="zoom-out" data-aos-duration="2500">
+            <div class="flex items-center justify-between center_slider">
+              <div class="w-1/3">
+                <div
+                  class="border-2 border-[#413547] max-w-[364px] min-h-[473px] rounded-[12px] relative"
+                >
+                  <div class="flex items-center justify-center">
+                    <img
+                      class="absolute bottom-0"
+                      src="./assets/images/webp/Card_bottom_img.webp"
+                      alt="Card_bottom_img.webp"
+                    />
+                  </div>
+
+                  <img
+                    class="absolute bottom-0"
+                    src="./assets/images/webp/Card_Ellipse.webp"
+                    alt="Card_Ellipse"
+                  />
+
+                  <div class="relative z-1">
+                    <div class="relative">
+                      <img
+                        class="mx-auto p-4"
+                        src="./assets/images/webp/slider_img_1.webp"
+                        alt="slider_img_1.webp"
+                      />
+                      <div class="absolute start-[4.5%] top-[10%]">
+                        <div
+                          class="backdrop_blur_20px py-1 px-2.5 rounded-r-[50px]"
+                        >
+                          <p
+                            class="ff_k2d text-[14px] font-normal leading-[150%] text-white"
+                          >
+                            27Jan 2024
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <h1
+                      class="ff_oswald text-[20px] font-normal text-white px-4"
+                    >
+                      Meme Competitions
+                    </h1>
+                    <p
+                      class="ff_k2d text-white font-normal leading-[150%] opacity-70 text-[16px] px-4 pt-1"
+                    >
+                      Get creative and win prizes for the most witty, relevant
+                      and engaging memes on Solana.
+                    </p>
+
+                    <div class="flex items-center gap-5 px-4 py-4">
+                      <a href="https://www.instagram.com/"
+                        ><img
+                          class="max-w-[32px]"
+                          src="./assets/images/webp/instagram.webp"
+                          alt="instagram"
+                      /></a>
+                      <a href="https://twitter.com/"
+                        ><img
+                          class="max-w-[32px]"
+                          src="./assets/images/webp/twitter.webp"
+                          alt="twitter"
+                      /></a>
+                    </div>
+
+                    <div class="flex items-center justify-between px-4">
+                      <p
+                        class="ff_k2d text-white font-normal leading-[150%] opacity-70 text-[16px] pt-1"
+                      >
+                        Scan our QR code join now
+                      </p>
+                      <a href="#"
+                        ><img
+                          class="max-w-[44px]"
+                          src="./assets/images/webp/QR_code.webp"
+                          alt="QR_code.webp"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-1/3">
+                <div
+                  class="border-2 border-[#413547] max-w-[364px] min-h-[473px] rounded-[12px] relative"
+                >
+                  <div class="flex items-center justify-center">
+                    <img
+                      class="absolute bottom-0"
+                      src="./assets/images/webp/Card_bottom_img.webp"
+                      alt="Card_bottom_img.webp"
+                    />
+                  </div>
+
+                  <img
+                    class="absolute bottom-0"
+                    src="./assets/images/webp/Card_Ellipse.webp"
+                    alt="Card_Ellipse"
+                  />
+
+                  <div class="relative z-1">
+                    <div class="relative">
+                      <img
+                        class="mx-auto p-4"
+                        src="./assets/images/webp/slider_img_2.webp"
+                        alt="slider_img_1.webp"
+                      />
+                      <div class="absolute start-[4.5%] top-[10%]">
+                        <div
+                          class="backdrop_blur_20px py-1 px-2.5 rounded-r-[50px]"
+                        >
+                          <p
+                            class="ff_k2d text-[14px] font-normal leading-[150%] text-white"
+                          >
+                            27Jan 2024
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <h1
+                      class="ff_oswald text-[20px] font-normal text-white px-4"
+                    >
+                      AMA’s
+                    </h1>
+                    <p
+                      class="ff_k2d text-white font-normal leading-[150%] opacity-70 text-[16px] px-4 pt-1"
+                    >
+                      Ask the questions that are on your mind, and engage in fun
+                      conversations with the creators.
+                    </p>
+
+                    <div class="flex items-center gap-5 px-4 py-4">
+                      <a href="https://www.instagram.com/"
+                        ><img
+                          class="max-w-[32px]"
+                          src="./assets/images/webp/instagram.webp"
+                          alt="instagram"
+                      /></a>
+                      <a href="https://twitter.com/"
+                        ><img
+                          class="max-w-[32px]"
+                          src="./assets/images/webp/twitter.webp"
+                          alt="twitter"
+                      /></a>
+                    </div>
+
+                    <div class="flex items-center justify-between px-4">
+                      <p
+                        class="ff_k2d text-white font-normal leading-[150%] opacity-70 text-[16px] pt-1"
+                      >
+                        Scan our QR code join now
+                      </p>
+                      <a href="#"
+                        ><img
+                          class="max-w-[44px]"
+                          src="./assets/images/webp/QR_code.webp"
+                          alt="QR_code.webp"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-1/3">
+                <div
+                  class="border-2 border-[#413547] max-w-[364px] min-h-[473px] rounded-[12px] relative"
+                >
+                  <div class="flex items-center justify-center">
+                    <img
+                      class="absolute bottom-0"
+                      src="./assets/images/webp/Card_bottom_img.webp"
+                      alt="Card_bottom_img.webp"
+                    />
+                  </div>
+
+                  <img
+                    class="absolute bottom-0"
+                    src="./assets/images/webp/Card_Ellipse.webp"
+                    alt="Card_Ellipse"
+                  />
+
+                  <div class="relative z-1">
+                    <div class="relative">
+                      <img
+                        class="mx-auto p-4"
+                        src="./assets/images/webp/slider_img_3.webp"
+                        alt="slider_img_3.webp"
+                      />
+                      <div class="absolute start-[4.5%] top-[10%]">
+                        <div
+                          class="backdrop_blur_20px py-1 px-2.5 rounded-r-[50px]"
+                        >
+                          <p
+                            class="ff_k2d text-[14px] font-normal leading-[150%] text-white"
+                          >
+                            27Jan 2024
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <h1
+                      class="ff_oswald text-[20px] font-normal text-white px-4"
+                    >
+                      AI video competitions
+                    </h1>
+                    <p
+                      class="ff_k2d text-white font-normal leading-[150%] opacity-70 text-[16px] px-4 pt-1"
+                    >
+                      Utilize cutting edge technology to craft amazing AI videos
+                      and share them with the community for a chance to win
+                      prizes.
+                    </p>
+
+                    <div class="flex items-center gap-5 px-4 py-4">
+                      <a href="https://www.instagram.com/"
+                        ><img
+                          class="max-w-[32px]"
+                          src="./assets/images/webp/instagram.webp"
+                          alt="instagram"
+                      /></a>
+                      <a href="https://twitter.com/"
+                        ><img
+                          class="max-w-[32px]"
+                          src="./assets/images/webp/twitter.webp"
+                          alt="twitter"
+                      /></a>
+                    </div>
+
+                    <div class="flex items-center justify-between px-4">
+                      <p
+                        class="ff_k2d text-white font-normal leading-[150%] opacity-70 text-[16px] pt-1"
+                      >
+                        Scan our QR code join now
+                      </p>
+                      <a href="#"
+                        ><img
+                          class="max-w-[44px]"
+                          src="./assets/images/webp/QR_code.webp"
+                          alt="QR_code.webp"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-1/3">
+                <div
+                  class="border-2 border-[#413547] max-w-[364px] min-h-[473px] rounded-[12px] relative"
+                >
+                  <div class="flex items-center justify-center">
+                    <img
+                      class="absolute bottom-0"
+                      src="./assets/images/webp/Card_bottom_img.webp"
+                      alt="Card_bottom_img.webp"
+                    />
+                  </div>
+
+                  <img
+                    class="absolute bottom-0"
+                    src="./assets/images/webp/Card_Ellipse.webp"
+                    alt="Card_Ellipse"
+                  />
+
+                  <div class="relative z-1">
+                    <div class="relative">
+                      <img
+                        class="mx-auto p-4"
+                        src="./assets/images/webp/slider_img_1.webp"
+                        alt="slider_img_1.webp"
+                      />
+                      <div class="absolute start-[4.5%] top-[10%]">
+                        <div
+                          class="backdrop_blur_20px py-1 px-2.5 rounded-r-[50px]"
+                        >
+                          <p
+                            class="ff_k2d text-[14px] font-normal leading-[150%] text-white"
+                          >
+                            27Jan 2024
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <h1
+                      class="ff_oswald text-[20px] font-normal text-white px-4"
+                    >
+                      Meme Competitions
+                    </h1>
+                    <p
+                      class="ff_k2d text-white font-normal leading-[150%] opacity-70 text-[16px] px-4 pt-1"
+                    >
+                      Get creative and win prizes for the most witty, relevant
+                      and engaging memes on Solana.
+                    </p>
+
+                    <div class="flex items-center gap-5 px-4 py-4">
+                      <a href="https://www.instagram.com/"
+                        ><img
+                          class="max-w-[32px]"
+                          src="./assets/images/webp/instagram.webp"
+                          alt="instagram"
+                      /></a>
+                      <a href="https://twitter.com/"
+                        ><img
+                          class="max-w-[32px]"
+                          src="./assets/images/webp/twitter.webp"
+                          alt="twitter"
+                      /></a>
+                    </div>
+
+                    <div class="flex items-center justify-between px-4">
+                      <p
+                        class="ff_k2d text-white font-normal leading-[150%] opacity-70 text-[16px] pt-1"
+                      >
+                        Scan our QR code join now
+                      </p>
+                      <a href="#"
+                        ><img
+                          class="max-w-[44px]"
+                          src="./assets/images/webp/QR_code.webp"
+                          alt="QR_code.webp"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div
-              class="flex items-center justify-center flex-wrap gap-7 sm:gap-8"
+              class="mt-28 sm:mt-14 flex items-center justify-center"
+              data-aos="zoom-in"
+              data-aos-duration="2300"
             >
-              <a
-                href="#"
-                class="text-white ff_k2d text-[16px] font-semibold leading-[150%]"
-                >Home</a
+              <button
+                class="px-5 py-3 duration-300 transition-all rounded-[110px] ff_k2d text-white font-[16px] font-semibold leading-normal bg_nav_btn"
               >
-              <a
-                href="#"
-                class="text-white ff_k2d text-[16px] font-semibold leading-[150%]"
-                >About Us</a
-              >
-              <a
-                href="#"
-                class="text-white ff_k2d text-[16px] font-semibold leading-[150%]"
-                >Our Mission</a
-              >
-              <a
-                href="#"
-                class="text-white ff_k2d text-[16px] font-semibold leading-[150%]"
-                >Our Mission</a
-              >
-              <a
-                href="#"
-                class="text-white ff_k2d text-[16px] font-semibold leading-[150%]"
-                >Community</a
-              >
-              <a
-                href="#"
-                class="text-white ff_k2d text-[16px] font-semibold leading-[150%]"
-                >Get Involved</a
-              >
-            </div>
-
-            <div class="flex items-center justify-center gap-4 my-6 sm:my-8">
-              <a href="https://facebook.com/"
-                ><img
-                  class="w-[40px]"
-                  src="./assets/images/webp/facebook.webp"
-                  alt="twitter.webp"
-              /></a>
-              <a href="https://twitter.com/"
-                ><img
-                  class="w-[40px]"
-                  src="./assets/images/webp/twitter.webp"
-                  alt="twitter.webp"
-              /></a>
-              <a href="https://instagram.com/"
-                ><img
-                  class="w-[40px]"
-                  src="./assets/images/webp/instagram.webp"
-                  alt="instagram.webp"
-              /></a>
+                Join the Spirit
+              </button>
             </div>
           </div>
         </div>
-        <div class="relative">
-          <img
-            class="absolute top-0 max-w-full"
-            src="./assets/images/webp/footer_line.png"
-            alt="footer_line"
-          />
-          <p
-            class="text-[#b9b4ba] text-center ff_k2d text-[12px] sm:text-[16px] font-normal leading-[150%] pt-1.5 pb-4 sm:pt-5 sm:pb-8"
+      </section>
+
+      <section class="bg-black mt-[-1px] relative z-[1]">
+        <img
+          class="absolute bottom-[10%] lg:bottom-[-10%] z-[-1]"
+          src="./assets/images/webp/footer_top_gradient.png"
+          alt="footer_top_gradient.png"
+        />
+        <img
+          class="animate-pulse absolute top-[-12%] sm:top-0 md:bottom-0 max-h-[400px] sm:max-w-[550px] md:max-h-[600px] lg:max-h-[850px]"
+          src="./assets/images/webp/Ellipse_36.webp"
+          alt="Ellipse_36.webp"
+        />
+
+        <img
+          class="animate-pulse absolute end-0 top-[-22%] sm:top-[-30%] lg:top-[-50%] h-[350px] sm:h-[500px] lg:h-[569px] z-[-1]"
+          src="./assets/images/webp/right_side_ball.webp"
+          alt="right_side_ball.webp"
+        />
+
+        <div class="max-w-[1140px] mx-auto px-5 sm:px-3 sm:pt-0 pt-12">
+          <div
+            class="flex items-center justify-center z-1 relative"
+            data-aos="zoom-in"
+            data-aos-duration="2300"
           >
-            Copyright ©2024 SPRT (All Rights reserved)
-          </p>
+            <button
+              class="rounded-[81px] border-[1px] text-[#01DFF7] py-3 px-4 ff_k2d font-semibold leading-[120%] border-[#29262d] bg-[#110e15] hover:text-white hover:bg-[#01DFF7] duration-300"
+            >
+              Tokenomics
+            </button>
+          </div>
+
+          <div class="flex items-center justify-center text-center">
+            <h1
+              data-aos="zoom-in"
+              data-aos-duration="2300"
+              class="ff_oswald text-white mb-0 text-[28px] sm:text-[35px] md:text-[40px] lg:text-[48px] leading-[122%] font-bold mt-2.5 mb-2.5 sm:mt-4 sm:mb-4"
+            >
+              Our Tokenomics
+            </h1>
+          </div>
+
+          <div class="flex items-center justify-center">
+            <p
+              data-aos="zoom-in"
+              data-aos-duration="2300"
+              class="opacity-70 ff_k2d text-white font-normal leading-[150%] text-center max-w-[691px]"
+            >
+              SPRT is proudly 100% community-owned - there are no pre-sales. We
+              have zero expectations, no utility and no possibility to be
+              anything more than complete meme speculation.
+            </p>
+          </div>
+
+          <div
+            data-aos="fade-right"
+            data-aos-duration="2300"
+            class="flex items-center justify-center flex-wrap mt-8 sm:mt-14 md:mt-[77px] gap-11 sm:gap-14 z-[1]"
+          >
+            <img
+              class="sm:block hidden sm:!max-w-[480px] sm:!min-h-[300px]"
+              src="./assets/images/webp/Tokenomics_circle.webp"
+              alt="Tokenomics_circle.webp"
+            />
+            <img
+              class="block sm:hidden max-w-[283px] min-h-[263px]"
+              src="./assets/images/webp/tokenomics_circle_2.webp"
+              alt="Tokenomics_circle.webp"
+            />
+
+            <div
+              data-aos="fade-left"
+              data-aos-duration="2300"
+              class="border-2 rounded-[12px] py-7 px-3 border-[#1f1f1f] w-[262px] min-h-[209px] bg-[#060606] max-w-full relative z-[1]"
+            >
+              <img
+                class="hidden sm:block absolute start-[-25%] top-[-25%] z-[-1]"
+                src="./assets/images/webp/Ellipse_21.webp"
+                alt="Ellipse_21.webp"
+              />
+              <div class="flex items-center justify-center">
+                <img
+                  class="absolute bottom-0"
+                  src="./assets/images/webp/tokenomics_card_img.webp"
+                  alt="tokenomics_card_img.webp"
+                />
+              </div>
+              <h1
+                class="text-[#15BFEF] ff_oswald text-[28px] font-semibold leading-[150%] text-center"
+              >
+                100%
+              </h1>
+              <p
+                class="ff_k2d font-normal text-[16px] leading-[150%] text-center text-white pt-3"
+              >
+                Community owned
+                <span class="block"> 0/0 TAX</span>
+              </p>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <footer class="bg-black mt-[-1px] relative">
+        <img
+          class="animate-pulse absolute top-[-20%] h-[428px]"
+          src="./assets/images/webp/Ellipse_37.webp"
+          alt="Ellipse_37.webp"
+        />
+        <img
+          class="animate-pulse absolute top-0 left-0 max-w-full h-[160px]"
+          src="./assets/images/webp/top_gradient.webp"
+          alt=""
+        />
+        <div
+          class="bg-[url('/assets/images/webp/footer_bg.webp')] bg-no-repeat bg-center bg-cover relative"
+        >
+          <div class="max-w-[1140px] mx-auto px-5 sm:px-3">
+            <div class="pt-24 sm:pt-12">
+              <a href="#home">
+                <img
+                  class="max-w-[116px] mx-auto mt-11 sm:mt-12"
+                  src="./assets/images/webp/LOGO_SPRT.webp"
+                  alt="LOGO_SPRT.webp"
+              /></a>
+              <p
+                class="ff_k2d text-white text-[16px] leading-[20.8px] opacity-70 mt-4 mb-6 text-center"
+              >
+                The true Spirit of Solana
+              </p>
+
+              <div
+                class="flex items-center justify-center flex-wrap gap-7 sm:gap-8"
+              >
+                <a
+                  href="#Home"
+                  class="text-white ff_k2d text-[16px] font-semibold leading-[150%] hover:text-[#00e0f7] duration-[300] transition-all"
+                  >Home</a
+                >
+                <a
+                  href="#aboutus"
+                  class="text-white ff_k2d text-[16px] font-semibold leading-[150%] hover:text-[#00e0f7] duration-[300] transition-all"
+                  >About Us</a
+                >
+                <a
+                  href="#mission"
+                  class="text-white ff_k2d text-[16px] font-semibold leading-[150%] hover:text-[#00e0f7] duration-[300] transition-all"
+                  >Our Mission</a
+                >
+                <a
+                  href="#gallery"
+                  class="text-white ff_k2d text-[16px] font-semibold leading-[150%] hover:text-[#00e0f7] duration-[300] transition-all"
+                  >Art Showcase</a
+                >
+                <a
+                  href="#community"
+                  class="text-white ff_k2d text-[16px] font-semibold leading-[150%] hover:text-[#00e0f7] duration-[300] transition-all"
+                  >Community</a
+                >
+                <a
+                  href="#"
+                  class="text-white ff_k2d text-[16px] font-semibold leading-[150%] hover:text-[#00e0f7] duration-[300] transition-all"
+                  >Get Involved</a
+                >
+              </div>
+
+              <div class="flex items-center justify-center gap-4 my-6 sm:my-8">
+                <a  href="https://facebook.com/"
+                  ><img
+                    class="translate-y[0%] hover:translate-y-[-10%] duration-300 w-[40px]"
+                    src="./assets/images/webp/facebook.webp"
+                    alt="twitter.webp"
+                /></a>
+                <a href="https://twitter.com/"
+                  ><img
+                    class="hover:translate-y-[-10%] duration-300 w-[40px]"
+                    src="./assets/images/webp/twitter.webp"
+                    alt="twitter.webp"
+                /></a>
+                <a href="https://instagram.com/"
+                  ><img
+                    class="hover:translate-y-[-10%] duration-300 w-[40px]"
+                    src="./assets/images/webp/instagram.webp"
+                    alt="instagram.webp"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <img
+              class="absolute cursor-pointer top-0 max-w-full"
+              src="./assets/images/webp/footer_line.png"
+              alt="footer_line"
+            />
+            <p
+              class="text-[#b9b4ba] text-center ff_k2d text-[12px] sm:text-[16px] font-normal leading-[150%] pt-1.5 pb-4 sm:pt-5 sm:pb-8"
+            >
+              Copyright &copy; <span id="currentYear"></span> SPRT (All Rights
+              reserved)
+            </p>
+          </div>
+        </div>
+      </footer>
+      <div
+        id="back-to-top"
+        class="fixed d-none bottom-4 right-4 p-4 text-white rounded-[50%] transform hover:scale-110 transition-transform ease-in duration-300 animate-bounce z-30"
+      >
+        <img
+          src="./assets/images/webp/back_to_top.webp"
+          alt="backToTopButton"
+        />
       </div>
-    </footer>
-     </div>
+    </div>
     <!------------preloader --->
     <script>
-     setTimeout(() => {
-  document.getElementById("preloader").classList.add("hidden");
-  preloader.classList.add("pointer_event_none");
-  document.body.classList.remove("overflow-hidden");
-}, 3000);
+      setTimeout(() => {
+        document.getElementById("preloader").classList.add("hidden");
+        preloader.classList.add("pointer_event_none");
+        document.body.classList.remove("overflow-hidden");
+      }, 3000);
     </script>
     <!-- ---------Nav-------- -->
     <script>
@@ -1383,9 +1622,36 @@
         ],
       });
     </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var backToTopButton = document.getElementById("back-to-top");
+
+        // Show/hide the button based on the scroll position
+        window.onscroll = function () {
+          if (
+            document.body.scrollTop > 300 ||
+            document.documentElement.scrollTop > 300
+          ) {
+            backToTopButton.style.display = "block";
+          } else {
+            backToTopButton.style.display = "none";
+          }
+        };
+
+        // Scroll to the top when the button is clicked
+        backToTopButton.addEventListener("click", function () {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        });
+      });
+    </script>
+    <script>
+      document.getElementById("currentYear").innerText =
+        new Date().getFullYear();
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-  AOS.init();
-</script>
+      AOS.init({ once: true });
+    </script>
   </body>
 </html>
