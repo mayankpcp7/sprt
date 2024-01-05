@@ -59,10 +59,12 @@ body {
   .next_arrow {
     right: 5%;
     bottom: 10%;
+    z-index: 200;
   }
   .prev_arrow {
     bottom: 10%;
     left: 5%;
+    z-index: 200;
   }
 }
 @media (max-width: 608px) {
