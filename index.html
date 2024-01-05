@@ -256,11 +256,13 @@
             class="flex flex-wrap justify-center pb-[50px] lg:justify-between flex-row"
           >
             <div class="lg:w-7/12 md:w-10/12 sm:5/12 relative z-[50]">
-              <div class="flex justify-center lg:justify-start">
+              <div
+                class="flex justify-center lg:justify-start"
+                data-aos="fade-right"
+                data-aos-duration="1500"
+              >
                 <button
                   class="rounded-[81px] border-[1px] text-[#01DFF7] py-3 px-4 ff_k2d font-semibold leading-[120%] border-[#29262d] bg-[#110e15] hover:text-white hover:bg-[#01DFF7] duration-300"
-                  data-aos="fade-right"
-                  data-aos-duration="1500"
                 >
                   About Us
                 </button>
@@ -644,9 +646,7 @@
             </div>
           </div>
 
-          <div
-            class="flex items-center relative justify-center pb-10"
-          >
+          <div class="flex items-center relative justify-center pb-10">
             <button
               class="px-5 py-3 relative z-[100] rounded-[110px] ff_k2d text-white font-[16px] font-semibold leading-normal bg_nav_btn mt-2.5"
             >
@@ -942,9 +942,11 @@
           class="max-w-[1140px] px-5 sm:px-3 mx-auto pb-24 relative z-[50]"
           id="community"
         >
-          <div data-aos-duration="2100" class="flex  items-center justify-center flex-col">
+          <div
+            data-aos-duration="2100"
+            class="flex items-center justify-center flex-col"
+          >
             <button
-             
               class="rounded-[81px] border-[1px] text-[#01DFF7] py-3 px-4 ff_k2d font-semibold leading-[120%] border-[#29262d] bg-[#110e15] hover:text-white hover:bg-[#01DFF7] duration-300 relative z-1"
             >
               Events
@@ -1485,7 +1487,7 @@
               </div>
 
               <div class="flex items-center justify-center gap-4 my-6 sm:my-8">
-                <a  href="https://facebook.com/"
+                <a href="https://facebook.com/"
                   ><img
                     class="translate-y[0%] hover:translate-y-[-10%] duration-300 w-[40px]"
                     src="./assets/images/webp/facebook.webp"
@@ -1523,9 +1525,10 @@
       </footer>
       <div
         id="back-to-top"
-        class="fixed d-none bottom-4 right-4 p-4 text-white rounded-[50%] transform hover:scale-110 transition-transform ease-in duration-300 animate-bounce z-30"
+        class="fixed d-none bottom-4 z-[200] right-4 p-4 text-white rounded-[50%] transform hover:scale-110 transition-transform ease-in duration-300 animate-bounce z-30"
       >
         <img
+          class="cursor-pointer"
           src="./assets/images/webp/back_to_top.webp"
           alt="backToTopButton"
         />
